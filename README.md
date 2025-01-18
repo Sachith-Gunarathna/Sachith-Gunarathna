@@ -61,10 +61,72 @@
 <img src=https://img.shields.io/badge/instagram-%23000000.svg?&style=for-the-badge&logo=instagram&logoColor=white alt=instagram style="margin-bottom: 5px;" />
 </a>
 <a href="https://www.youtube.com/user/https://www.youtube.com/@foxeegaminglk" target="_blank">
-<img src="https://raw.githubusercontent.com/Sachith-Gunarathna/Sachith-Gunarathna/refs/heads/main/Youtube.gif" width="7%"/>
+<img src=https://img.shields.io/badge/youtube-%23EE4831.svg?&style=for-the-badge&logo=youtube&logoColor=white alt=youtube style="margin-bottom: 5px;" />
 </a>  
 </div>  
-  
-
 <br/>  
+
+<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
+<br/>
+
+<h3 align="left">Languages and Tools:</h3>
+
+- Backend 
+<p align="left">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=php,laravel,java,nodejs,py,spring,express,nestjs,cs,cpp,raspberrypi" />
+  </a>
+</p>
+
+- Frontend
+<p align="left">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,tailwind,bootstrap" />
+  </a>
+</p>
+
+- Database
+<p alight="left">
+<a href="https://skillicons.dev">
+   <img src="https://skillicons.dev/icons?i=mongodb,mysql,postgresql" />
+  </a> 
+</p>
+
+- Tools
+<p align="left">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=git,github,figma,xd,vscode,blender,arduino,unreal" />
+  </a>
+</p>
+<br/>  
+<br/>
+
+<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
+
+<h3 align="left">GitHub Stats:</h3>
+<div align="center">
+ 
+![Sachith-Gunarathna's GitHub stats](https://github-readme-stats.vercel.app/api?username=sachith-gunarathna\&theme=monokai\&show_icons=true\&show=reviews,prs_merged,prs_merged_percentage\&hide=contribs,issues)
+
+[![GitHub Streak](https://streak-stats.demolab.com?user=sachith-gunarathna&theme=dark&hide_border=true)](https://git.io/streak-stats)
+
+</div>
+<br><br>
+
+<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
+
+<h3 align="left">Activity:</h3>
+
+[![Sachith-Gunarathna's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=sachith-gunarathna&theme=rogue&custom_title=Sachith's%20GitHub%20Activity%20Graph&color=ed1c24)](https://github.com/sachith-gunarathna/github-readme-activity-graph)
+<br><br>
+<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
+
+<h3 align="left">Achievements:</h3>
+
+[![An image of @supuna97's Holopin badges, which is a link to view their full Holopin profile](https://holopin.me/sachith)](https://holopin.io/@sachith)
+<br><br><br>
+
+<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
+
+<img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="60"> <em><b>I love connecting with different people</b> so if you want to say <b>hi, I'll be happy to meet you more!</b> :)</em>
 
