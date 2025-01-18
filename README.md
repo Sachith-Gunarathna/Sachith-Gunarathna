@@ -61,7 +61,7 @@
 <img src=https://img.shields.io/badge/instagram-%23000000.svg?&style=for-the-badge&logo=instagram&logoColor=white alt=instagram style="margin-bottom: 5px;" />
 </a>
 <a href="https://www.youtube.com/user/https://www.youtube.com/@foxeegaminglk" target="_blank">
-<img src="" />
+<img src="https://raw.githubusercontent.com/Sachith-Gunarathna/Sachith-Gunarathna/refs/heads/main/Youtube.gif" width="7%"/>
 </a>  
 </div>  
   
