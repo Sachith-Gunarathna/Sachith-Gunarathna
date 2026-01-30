@@ -30,14 +30,14 @@
  🔭 I’m currently Studying at Java Institute top up on Birmingham City University  
   
 
- 🌱 I’m currently learning PHP, JavaScript, Java,  jQuery, 
- SQL, C++, C#  
+ 🌱 I’m currently learning React, JavaScript, Java,  GSAP, 
+ .Net, C++, C#  
   
 
 📫 How to reach me sachithniromal918@gmail.com  
   
 
- ❓ Ask me about HTML 5, CSS, JavaScript, Bootstrap 5, PHP, Java  
+ ❓ Ask me about HTML 5, CSS, JavaScript, Bootstrap 5, PHP, Java , React Native 
   
 </div>
 
