@@ -106,7 +106,7 @@
 <h3 align="left">GitHub Stats:</h3>
 <div align="center">
  
-
+[![Sachith's GitHub stats](https://github-readme-stats.vercel.app/api?username=Sachith-Gunarathna&show_icons=true&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
 
 <a href="https://git.io/streak-stats"><img src="https://streak-stats.demolab.com?user=Sachith-Gunarathna&theme=tokyonight-duo&hide_border=true" alt="GitHub Streak" /></a>
 
