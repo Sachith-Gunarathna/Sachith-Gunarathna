@@ -6,24 +6,31 @@
 ### <div align="center">Hi 👋, I'm Sachith Gunarathna</div>  
 
 <br/>
-<div align="center">
-  <img src="https://techstack-generator.vercel.app/java-icon.svg" alt="icon" width="50" height="50" />
-  <img src="https://techstack-generator.vercel.app/python-icon.svg" alt="icon" width="50" height="50" />
-  <img src="https://techstack-generator.vercel.app/ts-icon.svg" alt="icon" width="50" height="50" />
-  <img src="https://techstack-generator.vercel.app/js-icon.svg" alt="icon"width="50" height="50" />
-  <img src="https://techstack-generator.vercel.app/react-icon.svg" alt="icon" width="50" height="50" />
- <img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="icon" width="50" height="50" />
-</div>
-<br/>
 
 <div align="center">
-  <img src="https://techstack-generator.vercel.app/cpp-icon.svg" alt="icon" width="50" height="50" />
-  <img src="https://techstack-generator.vercel.app/csharp-icon.svg" alt="icon" width="50" height="50" />
-  <img src="https://techstack-generator.vercel.app/github-icon.svg" alt="icon" width="50" height="50" />
-  <img src="https://techstack-generator.vercel.app/raspberrypi-icon.svg" alt="icon" width="50" height="50" />
-  <img src="https://techstack-generator.vercel.app/restapi-icon.svg" alt="icon" width="50" height="50" />
-  <img src="https://techstack-generator.vercel.app/graphql-icon.svg" alt="icon" width="50" height="50" />
+  <table>
+    <tr>
+      <td><img src="https://techstack-generator.vercel.app/java-icon.svg" alt="icon" width="50" height="50" /></td>
+      <td><img src="https://techstack-generator.vercel.app/python-icon.svg" alt="icon" width="50" height="50" /></td>
+      <td><img src="https://techstack-generator.vercel.app/ts-icon.svg" alt="icon" width="50" height="50" /></td>
+      <td><img src="https://techstack-generator.vercel.app/js-icon.svg" alt="icon" width="50" height="50" /></td>
+      <td><img src="https://techstack-generator.vercel.app/react-icon.svg" alt="icon" width="50" height="50" /></td>
+      <td><img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="icon" width="50" height="50" /></td>
+    </tr>
+  </table>
+  <br/>
+  <table>
+    <tr>
+      <td><img src="https://techstack-generator.vercel.app/cpp-icon.svg" alt="icon" width="50" height="50" /></td>
+      <td><img src="https://techstack-generator.vercel.app/csharp-icon.svg" alt="icon" width="50" height="50" /></td>
+      <td><img src="https://techstack-generator.vercel.app/github-icon.svg" alt="icon" width="50" height="50" /></td>
+      <td><img src="https://techstack-generator.vercel.app/raspberrypi-icon.svg" alt="icon" width="50" height="50" /></td>
+      <td><img src="https://techstack-generator.vercel.app/restapi-icon.svg" alt="icon" width="50" height="50" /></td>
+      <td><img src="https://techstack-generator.vercel.app/graphql-icon.svg" alt="icon" width="50" height="50" /></td>
+    </tr>
+  </table>
 </div>
+
 <br/>
 <div align="center">
   
