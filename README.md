@@ -127,7 +127,9 @@
 
 <h3 align="left">GitHub Stats:</h3>
 <div align="center">
- 
+
+[![Naereen's github trophy](https://github-profile-trophy.vercel.app/?Sachith-Gunarathna=Naereen&row=1)](https://github.com/ryo-ma/github-profile-trophy)
+ <br/>
 
 <a href="https://git.io/streak-stats"><img src="https://streak-stats.demolab.com?user=Sachith-Gunarathna&theme=tokyonight-duo&hide_border=true" alt="GitHub Streak" /></a>
 
