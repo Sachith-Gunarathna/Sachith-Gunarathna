@@ -128,6 +128,11 @@
 <h3 align="left">GitHub Stats:</h3>
 <div align="center">
 
+<a href="https://github.com/Sachith-Gunarathna">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sachith-Gunarathna&layout=compact&theme=radical" alt="Top Languages" />
+</a>
+<br/>
+
 <a href="https://git.io/streak-stats"><img src="https://streak-stats.demolab.com?user=Sachith-Gunarathna&theme=tokyonight-duo&hide_border=true" alt="GitHub Streak" /></a>
 
 </div>
