@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://raw.githubusercontent.com/JSH32/JSH32/master/assets/main.gif" align="center" style="width: 100%" />
+<img src="https://github.com/Sachith-Gunarathna/Sachith-Gunarathna/blob/main/banner.gif" align="center" style="width: 100%" />
 </div>  
   
 
