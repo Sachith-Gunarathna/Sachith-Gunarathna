@@ -117,7 +117,7 @@
 - Tools
 <p align="left">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=git,github,figma,xd,vscode,blender,arduino,unreal" />
+    <img src="https://skillicons.dev/icons?i=git,github,figma,xd,vscode,blender,arduino,unreal,unity" />
   </a>
 </p>
 <br/>  
