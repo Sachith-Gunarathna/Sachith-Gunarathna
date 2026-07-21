@@ -1,0 +1,99 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" width="100%" preserveAspectRatio="none">
+  <defs>
+    <filter id="glow" x="-10%" y="-80%" width="120%" height="260%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur1"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="ambientGlow" x="-10%" y="-80%" width="120%" height="260%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="12" result="bigBlur"/>
+      <feMerge>
+        <feMergeNode in="bigBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="clip">
+      <rect width="1200" height="100"/>
+    </clipPath>
+    <linearGradient id="fadeL" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%"   stop-color="#0d1117" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="fadeR" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%"   stop-color="#0d1117" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="1"/>
+    </linearGradient>
+    <filter id="heartGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="hblur"/>
+      <feMerge>
+        <feMergeNode in="hblur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="100" fill="#0d1117"/>
+
+  <g stroke="#0e2510" stroke-width="0.6" opacity="0.9">
+    <line x1="0" y1="25"  x2="1200" y2="25"/>
+    <line x1="0" y1="50"  x2="1200" y2="50"/>
+    <line x1="0" y1="75"  x2="1200" y2="75"/>
+    <line x1="50"   y1="0" x2="50"   y2="100"/>
+    <line x1="100"  y1="0" x2="100"  y2="100"/>
+    <line x1="150"  y1="0" x2="150"  y2="100"/>
+    <line x1="200"  y1="0" x2="200"  y2="100"/>
+    <line x1="250"  y1="0" x2="250"  y2="100"/>
+    <line x1="300"  y1="0" x2="300"  y2="100"/>
+    <line x1="350"  y1="0" x2="350"  y2="100"/>
+    <line x1="400"  y1="0" x2="400"  y2="100"/>
+    <line x1="450"  y1="0" x2="450"  y2="100"/>
+    <line x1="500"  y1="0" x2="500"  y2="100"/>
+    <line x1="550"  y1="0" x2="550"  y2="100"/>
+    <line x1="600"  y1="0" x2="600"  y2="100"/>
+    <line x1="650"  y1="0" x2="650"  y2="100"/>
+    <line x1="700"  y1="0" x2="700"  y2="100"/>
+    <line x1="750"  y1="0" x2="750"  y2="100"/>
+    <line x1="800"  y1="0" x2="800"  y2="100"/>
+    <line x1="850"  y1="0" x2="850"  y2="100"/>
+    <line x1="900"  y1="0" x2="900"  y2="100"/>
+    <line x1="950"  y1="0" x2="950"  y2="100"/>
+    <line x1="1000" y1="0" x2="1000" y2="100"/>
+    <line x1="1050" y1="0" x2="1050" y2="100"/>
+    <line x1="1100" y1="0" x2="1100" y2="100"/>
+    <line x1="1150" y1="0" x2="1150" y2="100"/>
+  </g>
+
+  <g clip-path="url(#clip)">
+    <path
+      d="M0,65 L55,65 L62,52 L70,65 L78,65 L83,70 L91,8 L97,78 L106,65 L120,65 L137,52 L155,63 L300,65 L355,65 L362,52 L370,65 L378,65 L383,70 L391,8 L397,78 L406,65 L420,65 L437,52 L455,63 L600,65 L655,65 L662,52 L670,65 L678,65 L683,70 L691,8 L697,78 L706,65 L720,65 L737,52 L755,63 L900,65 L955,65 L962,52 L970,65 L978,65 L983,70 L991,8 L997,78 L1006,65 L1020,65 L1037,52 L1055,63 L1200,65 L1255,65 L1262,52 L1270,65 L1278,65 L1283,70 L1291,8 L1297,78 L1306,65 L1320,65 L1337,52 L1355,63 L1500,65"
+      stroke="#00ff88" stroke-width="10" fill="none" opacity="0.08" filter="url(#ambientGlow)">
+      <animateTransform attributeName="transform" type="translate" from="0,0" to="-300,0" dur="1.5s" repeatCount="indefinite"/>
+    </path>
+    <path
+      d="M0,65 L55,65 L62,52 L70,65 L78,65 L83,70 L91,8 L97,78 L106,65 L120,65 L137,52 L155,63 L300,65 L355,65 L362,52 L370,65 L378,65 L383,70 L391,8 L397,78 L406,65 L420,65 L437,52 L455,63 L600,65 L655,65 L662,52 L670,65 L678,65 L683,70 L691,8 L697,78 L706,65 L720,65 L737,52 L755,63 L900,65 L955,65 L962,52 L970,65 L978,65 L983,70 L991,8 L997,78 L1006,65 L1020,65 L1037,52 L1055,63 L1200,65 L1255,65 L1262,52 L1270,65 L1278,65 L1283,70 L1291,8 L1297,78 L1306,65 L1320,65 L1337,52 L1355,63 L1500,65"
+      stroke="#00ff88" stroke-width="4" fill="none" opacity="0.25" filter="url(#glow)">
+      <animateTransform attributeName="transform" type="translate" from="0,0" to="-300,0" dur="1.5s" repeatCount="indefinite"/>
+    </path>
+    <path
+      d="M0,65 L55,65 L62,52 L70,65 L78,65 L83,70 L91,8 L97,78 L106,65 L120,65 L137,52 L155,63 L300,65 L355,65 L362,52 L370,65 L378,65 L383,70 L391,8 L397,78 L406,65 L420,65 L437,52 L455,63 L600,65 L655,65 L662,52 L670,65 L678,65 L683,70 L691,8 L697,78 L706,65 L720,65 L737,52 L755,63 L900,65 L955,65 L962,52 L970,65 L978,65 L983,70 L991,8 L997,78 L1006,65 L1020,65 L1037,52 L1055,63 L1200,65 L1255,65 L1262,52 L1270,65 L1278,65 L1283,70 L1291,8 L1297,78 L1306,65 L1320,65 L1337,52 L1355,63 L1500,65"
+      stroke="#00ff88" stroke-width="2" fill="none" filter="url(#glow)">
+      <animateTransform attributeName="transform" type="translate" from="0,0" to="-300,0" dur="1.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <rect x="0"    y="0" width="140" height="100" fill="url(#fadeL)"/>
+  <rect x="1060" y="0" width="140" height="100" fill="url(#fadeR)"/>
+
+  <text x="52" y="68" font-family="sans-serif" font-size="18" fill="#ff3366" text-anchor="middle" filter="url(#heartGlow)">&#9829;
+    <animate attributeName="opacity" values="1;0.4;1" dur="1.5s" repeatCount="indefinite"/>
+  </text>
+  <circle cx="86" cy="62" r="4" fill="#ff3366" filter="url(#heartGlow)">
+    <animate attributeName="opacity" values="1;0;1" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <text x="95" y="66" font-family="monospace" font-size="9" fill="#ff3366" letter-spacing="1" opacity="0.85">LIVE</text>
+
+</svg>
