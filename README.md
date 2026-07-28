@@ -73,7 +73,7 @@
 
 <h3 align="left">Connect with me:</h3>
 <div align="center">
-  <a href="www.linkedin.com/in/sachith-ng" target="_blank">
+  <a href="https://www.linkedin.com/in/sachith-ng" target="_blank">
     <img src=https://custom-icon-badges.demolab.com/badge/LinkedIn-0A66C2?logo=linkedin-white&logoColor=fff alt=linkedin style="margin-bottom: 5px;" />
   </a>
   <a href="https://web.facebook.com/sachith.niromal.10/" target="_blank">
