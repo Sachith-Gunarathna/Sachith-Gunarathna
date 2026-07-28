@@ -73,21 +73,24 @@
 
 <h3 align="left">Connect with me:</h3>
 <div align="center">
-<a href="https://github.com/Sachith-Gunarathna" target="_blank">
-<img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 5px;" />
-</a>
-<a href="https://web.facebook.com/sachith.niromal.10/" target="_blank">
-<img src=https://img.shields.io/badge/facebook-%232E87FB.svg?&style=for-the-badge&logo=facebook&logoColor=white alt=facebook style="margin-bottom: 5px;" />
-</a>
-<a href="https://www.instagram.com/sachith_gunarathna/" target="_blank">
-<img src=https://img.shields.io/badge/instagram-%23000000.svg?&style=for-the-badge&logo=instagram&logoColor=white alt=instagram style="margin-bottom: 5px;" />
-</a>
-<a href="https://www.youtube.com/@foxeegaminglk" target="_blank">
-<img src=https://img.shields.io/badge/youtube-%23EE4831.svg?&style=for-the-badge&logo=youtube&logoColor=white alt=youtube style="margin-bottom: 5px;" />
-</a>  
+  <a href="www.linkedin.com/in/sachith-ng" target="_blank">
+    <img src=https://custom-icon-badges.demolab.com/badge/LinkedIn-0A66C2?logo=linkedin-white&logoColor=fff alt=linkedin style="margin-bottom: 5px;" />
+  </a>
+  <a href="https://web.facebook.com/sachith.niromal.10/" target="_blank">
+    <img src=https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white alt=facebook style="margin-bottom: 5px;" />
+  </a>
+  <a href="https://www.instagram.com/sachith_gunarathna/" target="_blank">
+    <img src=https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white alt=instagram style="margin-bottom: 5px;" />
+  </a>
+  <a href="https://www.youtube.com/@foxeegaminglk" target="_blank">
+    <img src=https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white alt=youtube style="margin-bottom: 5px;" />
+  </a> 
+  <a href="https://www.tiktok.com/@sachi_ng_" target="_blank">
+    <img src=https://img.shields.io/badge/TikTok-black?logo=tiktok&logoColor=white alt=tiktok style="margin-bottom: 5px;" />
+  </a> 
 </div>  
-<br/>  
 
+<br/>  
 <img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
 <br/>
 
