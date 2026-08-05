@@ -76,7 +76,7 @@
   <a href="https://www.linkedin.com/in/sachith-ng" target="_blank">
     <img src=https://custom-icon-badges.demolab.com/badge/LinkedIn-0A66C2?logo=linkedin-white&logoColor=fff alt=linkedin style="margin-bottom: 5px;" />
   </a>
-  <a href="https://web.facebook.com/sachith.niromal.10/" target="_blank">
+  <a href="https://web.facebook.com/sachith.n.21/" target="_blank">
     <img src=https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white alt=facebook style="margin-bottom: 5px;" />
   </a>
   <a href="https://www.instagram.com/sachith_gunarathna/" target="_blank">
