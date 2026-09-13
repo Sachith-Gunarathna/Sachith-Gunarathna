@@ -145,6 +145,10 @@
 
 [![Sachith-Gunarathna's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=sachith-gunarathna&theme=rogue&custom_title=Sachith's%20GitHub%20Activity%20Graph&color=ed1c24)](https://github.com/sachith-gunarathna/github-readme-activity-graph)
 <br><br>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Sachith-Gunarathna/GitHub-status-bar-system/main/assets/dev-pulse.svg" width="100%" alt="Sachith Dev Pulse" />
+</p>
+<br><br>
 <img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
 
 <h3 align="left">Achievements:</h3>
