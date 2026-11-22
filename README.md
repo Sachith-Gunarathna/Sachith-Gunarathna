@@ -1,25 +1,37 @@
 <div align="center">
 
-<!-- 1. TOP BENTO CLUSTER (7-COL HERO + 5-COL PORTRAIT) -->
-<img align="top" src="assets/01-hero-portrait.svg" width="100%" alt="Sachith Gunarathna — Co-Founder & Lead Engineer" />
+<!-- ASYMMETRIC BENTO OS DASHBOARD (AUTO-UPDATED VIA GITHUB ACTIONS) -->
+<a href="https://nexcentauri.com" target="_blank">
+  <img src="./assets/bento-os.svg" alt="Sachith Gunarathna — Asymmetric Bento OS" width="100%" />
+</a>
 
-<!-- 2. MIDDLE TELEMETRY ROW (5-COL GITHUB PULSE + 7-COL CODEBASE DISTRIBUTION) -->
-<img align="top" src="assets/02-telemetry-row.svg" width="100%" alt="GitHub Pulse & Codebase Distribution" />
+<br /><br />
 
-<!-- 3. TECH ARSENAL (3-COLUMN ARCHITECTURAL) -->
-<img align="top" src="assets/03-tech-arsenal.svg" width="100%" alt="Tech Arsenal" />
-
-<!-- 4. CONTRIBUTION MATRIX (9-COL) + VELOCITY PANEL (3-COL) -->
-<img align="top" src="assets/04-contribution-velocity.svg" width="100%" alt="Contribution Matrix & Velocity" />
-
-<br/>
-
-<!-- 5. FLOATING CONNECT DOCK -->
+<!-- BOTTOM FLOATING CONNECT DOCK (EVERY BUTTON NATIVELY CLICKABLE) -->
 <p align="center">
-  <a href="https://nexcentauri.com" target="_blank"><img src="assets/05-dock-nexcentauri.svg" width="16.2%" alt="Nexcentauri"></a><a href="https://www.linkedin.com/in/sachith-ng" target="_blank"><img src="assets/05-dock-linkedin.svg" width="16.2%" alt="LinkedIn"></a><a href="mailto:sachithniromal918@gmail.com"><img src="assets/05-dock-email.svg" width="16.2%" alt="Email"></a><a href="https://github.com/Sachith-Gunarathna" target="_blank"><img src="assets/05-dock-github.svg" width="16.2%" alt="GitHub"></a><a href="https://www.instagram.com/sachith_gunarathna/" target="_blank"><img src="assets/05-dock-instagram.svg" width="16.2%" alt="Instagram"></a><a href="https://www.youtube.com/@foxeegaminglk" target="_blank"><img src="assets/05-dock-youtube.svg" width="16.2%" alt="YouTube"></a>
+  <a href="https://nexcentauri.com" target="_blank">
+    <img src="./assets/dock/dock-nexcentauri.svg" height="36" alt="Nexcentauri" />
+  </a>&nbsp;
+  <a href="https://www.linkedin.com/in/sachith-ng" target="_blank">
+    <img src="./assets/dock/dock-linkedin.svg" height="36" alt="LinkedIn" />
+  </a>&nbsp;
+  <a href="mailto:sachithniromal918@gmail.com">
+    <img src="./assets/dock/dock-email.svg" height="36" alt="Email" />
+  </a>&nbsp;
+  <a href="https://github.com/Sachith-Gunarathna" target="_blank">
+    <img src="./assets/dock/dock-github.svg" height="36" alt="GitHub" />
+  </a>&nbsp;
+  <a href="https://www.instagram.com/sachith_gunarathna/" target="_blank">
+    <img src="./assets/dock/dock-instagram.svg" height="36" alt="Instagram" />
+  </a>&nbsp;
+  <a href="https://www.youtube.com/@foxeegaminglk" target="_blank">
+    <img src="./assets/dock/dock-youtube.svg" height="36" alt="YouTube" />
+  </a>
 </p>
 
-<!-- 6. MINIMALIST FOOTER -->
-<img align="top" src="assets/06-footer.svg" width="100%" alt="Sachith Gunarathna © 2026" />
+<!-- MINIMALIST FOOTER -->
+<p align="center">
+  <img src="./assets/footer.svg" alt="Sachith Gunarathna © 2026 — Engineered in Sri Lanka" />
+</p>
 
 </div>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="114" height="36" viewBox="0 0 114 36" fill="none">
+  <rect x="0.5" y="0.5" width="113" height="35" rx="17.5" fill="#121215" stroke="#222228" stroke-width="1"/>
+  <g transform="translate(15, 11) scale(0.62)" stroke="#8E8E93" stroke-width="2.1" fill="none"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></g>
+  <text x="38" y="22" fill="#FAFAFA" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11.5" font-weight="500">Instagram</text>
+</svg>

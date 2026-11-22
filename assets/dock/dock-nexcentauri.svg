@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="36" viewBox="0 0 128 36" fill="none">
+  <rect x="0.5" y="0.5" width="127" height="35" rx="17.5" fill="#121215" stroke="#222228" stroke-width="1"/>
+  <g transform="translate(15, 11) scale(0.62)" stroke="#FF5E1A" stroke-width="2.1" fill="none"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></g>
+  <text x="38" y="22" fill="#FAFAFA" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11.5" font-weight="500">Nexcentauri</text>
+</svg>

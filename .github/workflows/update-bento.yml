@@ -1,0 +1,47 @@
+name: Update Bento OS Profile
+
+on:
+  schedule:
+    # Auto-sync live GitHub stats every 6 hours
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/generate_bento.py'
+      - 'assets/portrait.*'
+      - '.github/workflows/update-bento.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  update-bento:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Generate Bento OS SVGs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: Sachith-Gunarathna
+          # Accent presets: orange | lime | ice
+          BENTO_ACCENT: orange
+        run: python3 scripts/generate_bento.py
+
+      - name: Commit and push updated SVGs
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add assets/
+          if ! git diff --staged --quiet; then
+            git commit -m "chore(bento): sync live GitHub telemetry"
+            git push
+          else
+            echo "No telemetry changes to commit."
+          fi

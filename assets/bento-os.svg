@@ -1,0 +1,391 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1202" viewBox="0 0 1000 1202" fill="none">
+  <defs>
+    <style>
+      @keyframes pulseSignal {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.35; }
+      }
+      .signal-dot {
+        animation: pulseSignal 2s ease-in-out infinite;
+      }
+    </style>
+
+    <pattern id="portraitGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    </pattern>
+
+    <linearGradient id="portraitBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#16161B"/>
+      <stop offset="50%" stop-color="#101014"/>
+      <stop offset="100%" stop-color="#09090B"/>
+    </linearGradient>
+
+    <linearGradient id="portraitVignette" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#09090B" stop-opacity="0.15"/>
+      <stop offset="65%" stop-color="#09090B" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#09090B" stop-opacity="0.72"/>
+    </linearGradient>
+
+    <linearGradient id="devSil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#26262E"/>
+      <stop offset="100%" stop-color="#121216"/>
+    </linearGradient>
+
+    <linearGradient id="sparkFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FF5E1A" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#FF5E1A" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="greenGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="portraitClip">
+      <rect x="588" y="20" width="392" height="338" rx="16"/>
+    </clipPath>
+    <clipPath id="silClip">
+      <rect x="0" y="0" width="260" height="270"/>
+    </clipPath>
+  </defs>
+
+  <!-- OUTER OBSIDIAN STAGE FRAME -->
+  <rect x="0.5" y="0.5" width="999" height="1201" rx="24" fill="#09090B" stroke="#222228" stroke-width="1"/>
+
+  <!-- ===================================================================== -->
+  <!-- 1. TOP BENTO CLUSTER: 7 HERO + 5 PORTRAIT                             -->
+  <!-- ===================================================================== -->
+  <g>
+    <rect x="20" y="20" width="554" height="338" rx="16" fill="#121215" stroke="#222228" stroke-width="1"/>
+
+    <!-- Micro-header Pill -->
+    <rect x="48" y="46" width="256" height="26" rx="13" fill="#09090B" stroke="#222228" stroke-width="1"/>
+    <circle cx="64" cy="59" r="4" fill="#34D399" filter="url(#greenGlow)" class="signal-dot"/>
+    <text x="76" y="63" fill="#FAFAFA" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10.5" font-weight="600" letter-spacing="1.2">NEXCENTAURI <tspan fill="#FF5E1A">//</tspan> LEAD ENGINEER</text>
+
+    <!-- Top-Right Tag -->
+    <text x="546" y="63" text-anchor="end" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10" letter-spacing="1.5">SYS.01</text>
+
+    <!-- Massive Display Name -->
+    <text x="48" y="134" fill="#FAFAFA" font-family="'Space Grotesk', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="50" font-weight="700" letter-spacing="-1.4">Sachith</text>
+    <text x="48" y="186" fill="#FAFAFA" font-family="'Space Grotesk', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="50" font-weight="700" letter-spacing="-1.4">Gunarathna<tspan fill="#FF5E1A">.</tspan></text>
+
+    <!-- Concise Punchy Bio -->
+    <text x="48" y="222" fill="#8E8E93" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif" font-size="14">
+      <tspan fill="#FAFAFA" font-weight="500">BSc (Hons) Software Engineering</tspan> undergraduate (BCU) &amp; Co-Founder at
+    </text>
+    <text x="48" y="243" fill="#8E8E93" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif" font-size="14">
+      <tspan fill="#FAFAFA" font-weight="500">Nexcentauri</tspan>. Building enterprise POS systems, cross-platform mobile
+    </text>
+    <text x="48" y="264" fill="#8E8E93" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif" font-size="14">
+      apps, cloud infrastructure, and ESP32/ESP8266 IoT hardware.
+    </text>
+
+    <!-- Hairline Divider -->
+    <line x1="48" y1="292" x2="546" y2="292" stroke="#222228" stroke-width="1"/>
+
+    <!-- Bottom Pill Tags -->
+    <g transform="translate(48, 308)">
+      <rect x="0" y="0" width="178" height="28" rx="8" fill="#09090B" stroke="#222228" stroke-width="1"/>
+      <circle cx="14" cy="14" r="3" fill="#FF5E1A"/>
+      <text x="24" y="18" fill="#FAFAFA" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11">Sri Lanka • GMT+5:30</text>
+
+      <rect x="186" y="0" width="136" height="28" rx="8" fill="#09090B" stroke="#222228" stroke-width="1"/>
+      <text x="198" y="18" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11">Full-Stack &amp; IoT</text>
+
+      <rect x="330" y="0" width="146" height="28" rx="8" fill="#09090B" stroke="#222228" stroke-width="1"/>
+      <text x="342" y="18" fill="#FAFAFA" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11" font-weight="500">nexcentauri.com <tspan fill="#FF5E1A">↗</tspan></text>
+    </g>
+  </g>
+
+  <!-- Right Card (5 cols): Full-Bleed Stylized Portrait Card -->
+  <g>
+    <rect x="588" y="20" width="392" height="338" rx="16" fill="url(#portraitBg)"/>
+<g transform="translate(654.0, 88.0)" clip-path="url(#silClip)">
+  <circle cx="130" cy="92" r="44" fill="url(#devSil)" stroke="#2E2E38" stroke-width="1.5"/>
+  <path d="M44 280 C44 196 80 164 130 164 C180 164 216 196 216 280 Z" fill="url(#devSil)" stroke="#2E2E38" stroke-width="1.5"/>
+</g>
+    <rect x="588" y="20" width="392" height="338" rx="16" fill="url(#portraitGrid)" opacity="0.65"/>
+    <rect x="588" y="20" width="392" height="338" rx="16" fill="none" stroke="#222228" stroke-width="1"/>
+
+    <!-- 4 Corner Crosshair Brackets -->
+    <path d="M602 50 V34 H618" stroke="#FF5E1A" stroke-width="2" fill="none"/>
+    <path d="M950 34 H966 V50" stroke="rgba(255,255,255,0.30)" stroke-width="2" fill="none"/>
+    <path d="M602 328 V344 H618" stroke="rgba(255,255,255,0.30)" stroke-width="2" fill="none"/>
+    <path d="M950 344 H966 V328" stroke="#FF5E1A" stroke-width="2" fill="none"/>
+
+    <text x="956" y="50" text-anchor="end" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10" letter-spacing="1.4">ID // 06-2004</text>
+
+    <!-- Floating Glassmorphic Bottom Badge -->
+    <rect x="606" y="302" width="356" height="38" rx="12" fill="#09090B" fill-opacity="0.80" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+    <g transform="translate(620, 314)" stroke="#FF5E1A" stroke-width="1.8" fill="none">
+      <rect x="0" y="0" width="14" height="14" rx="2"/>
+      <circle cx="4.5" cy="4.5" r="1.1" fill="#FF5E1A"/>
+      <polyline points="14 9.5 10 6 2 14"/>
+    </g>
+    <text x="642" y="325" fill="#FAFAFA" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11" font-weight="500">Sachith Gunarathna</text>
+    <text x="948" y="325" text-anchor="end" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10">RAW</text>
+  </g>
+
+  <!-- ===================================================================== -->
+  <!-- 2. MIDDLE TELEMETRY BENTO ROW: 5 PULSE + 7 CODEBASE                   -->
+  <!-- ===================================================================== -->
+  <g>
+    <rect x="20" y="372" width="392" height="228" rx="16" fill="#121215" stroke="#222228" stroke-width="1"/>
+    <text x="40" y="402" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11" font-weight="600" letter-spacing="1.4">01 // GITHUB PULSE</text>
+    <circle cx="390" cy="398" r="3" fill="#FF5E1A"/>
+
+    <rect x="40" y="420" width="171" height="74" rx="12" fill="#09090B" stroke="#222228" stroke-width="1"/>
+    <text x="54" y="441" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10" letter-spacing="0.8">PUBLIC REPOS</text>
+    <circle cx="197" cy="437" r="3" fill="#FF5E1A"/>
+    <text x="54" y="479" fill="#FAFAFA" font-family="'Space Grotesk', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="700">24</text>
+
+    <rect x="221" y="420" width="171" height="74" rx="12" fill="#09090B" stroke="#222228" stroke-width="1"/>
+    <text x="235" y="441" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10" letter-spacing="0.8">CONTRIBUTIONS</text>
+    <circle cx="378" cy="437" r="3" fill="#FF5E1A"/>
+    <text x="235" y="479" fill="#FF5E1A" font-family="'Space Grotesk', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="700">642</text>
+
+    <rect x="40" y="504" width="171" height="74" rx="12" fill="#09090B" stroke="#222228" stroke-width="1"/>
+    <text x="54" y="525" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10" letter-spacing="0.8">FOLLOWERS</text>
+    <circle cx="197" cy="521" r="3" fill="#3F3F46"/>
+    <text x="54" y="563" fill="#FAFAFA" font-family="'Space Grotesk', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="700">48</text>
+
+    <rect x="221" y="504" width="171" height="74" rx="12" fill="#09090B" stroke="#222228" stroke-width="1"/>
+    <text x="235" y="525" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10" letter-spacing="0.8">STARS</text>
+    <circle cx="378" cy="521" r="3" fill="#3F3F46"/>
+    <text x="235" y="563" fill="#FAFAFA" font-family="'Space Grotesk', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="700">31</text>
+  </g>
+
+  <g>
+    <rect x="426" y="372" width="554" height="228" rx="16" fill="#121215" stroke="#222228" stroke-width="1"/>
+    <text x="448" y="402" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11" font-weight="600" letter-spacing="1.4">02 // CODEBASE DISTRIBUTION</text>
+    <text x="958" y="402" text-anchor="end" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10" letter-spacing="0.8">PUBLIC SOURCE BYTES</text>
+
+    <rect x="448" y="454" width="510" height="18" rx="8" fill="#09090B" stroke="#222228" stroke-width="1"/>
+    <rect x="452.0" y="458" width="204.4" height="10" rx="3" fill="#FF5E1A"/><rect x="660.4" y="458" width="109.9" height="10" rx="3" fill="#38BDF8"/><rect x="774.3" y="458" width="69.9" height="10" rx="3" fill="#2DD4BF"/><rect x="848.2" y="458" width="48.7" height="10" rx="3" fill="#FACC15"/><rect x="900.9" y="458" width="29.9" height="10" rx="3" fill="#A78BFA"/><rect x="934.8" y="458" width="19.2" height="10" rx="3" fill="#F43F5E"/>
+
+    <g>
+  <circle cx="452.0" cy="514" r="4" fill="#FF5E1A"/>
+  <text x="464.0" y="518" fill="#FAFAFA" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12" font-weight="500">Java</text>
+  <text x="602.0" y="518" text-anchor="end" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11">42.4%</text>
+</g><g>
+  <circle cx="630.0" cy="514" r="4" fill="#38BDF8"/>
+  <text x="642.0" y="518" fill="#FAFAFA" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12" font-weight="500">TypeScript</text>
+  <text x="780.0" y="518" text-anchor="end" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11">22.8%</text>
+</g><g>
+  <circle cx="808.0" cy="514" r="4" fill="#2DD4BF"/>
+  <text x="820.0" y="518" fill="#FAFAFA" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12" font-weight="500">Dart</text>
+  <text x="958.0" y="518" text-anchor="end" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11">14.5%</text>
+</g><g>
+  <circle cx="452.0" cy="546" r="4" fill="#FACC15"/>
+  <text x="464.0" y="550" fill="#FAFAFA" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12" font-weight="500">JavaScript</text>
+  <text x="602.0" y="550" text-anchor="end" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11">10.1%</text>
+</g><g>
+  <circle cx="630.0" cy="546" r="4" fill="#A78BFA"/>
+  <text x="642.0" y="550" fill="#FAFAFA" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12" font-weight="500">Python</text>
+  <text x="780.0" y="550" text-anchor="end" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11">6.2%</text>
+</g><g>
+  <circle cx="808.0" cy="546" r="4" fill="#F43F5E"/>
+  <text x="820.0" y="550" fill="#FAFAFA" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12" font-weight="500">C++</text>
+  <text x="958.0" y="550" text-anchor="end" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11">4.0%</text>
+</g>
+  </g>
+
+  <!-- ===================================================================== -->
+  <!-- 3. TECH ARSENAL BENTO CARD (3-COLUMN ARCHITECTURAL)                   -->
+  <!-- ===================================================================== -->
+  <g>
+    <rect x="20" y="614" width="960" height="290" rx="16" fill="#121215" stroke="#222228" stroke-width="1"/>
+    <text x="44" y="646" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11" font-weight="600" letter-spacing="1.4">03 // TECH ARSENAL</text>
+    <text x="956" y="646" text-anchor="end" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10" letter-spacing="0.8">PRODUCTION STACK</text>
+    <line x1="44" y1="662" x2="956" y2="662" stroke="#222228" stroke-width="1"/>
+
+    <text x="44.0" y="690" fill="#FAFAFA" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11" font-weight="600" letter-spacing="1.2"><tspan fill="#FF5E1A">01 /</tspan> CORE &amp; BACKEND</text>
+    <g>
+  <rect x="44.0" y="708.0" width="67.3" height="28.0" rx="8" fill="#0D0D10" stroke="#222228" stroke-width="1"/>
+  <circle cx="57.0" cy="722.0" r="3" fill="#FF5E1A"/>
+  <text x="66.0" y="726.0" fill="#D4D4D8" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11">Java</text>
+</g>
+<g>
+  <rect x="119.3" y="708.0" width="115.0" height="28.0" rx="8" fill="#0D0D10" stroke="#222228" stroke-width="1"/>
+  <circle cx="132.3" cy="722.0" r="3" fill="#6DB33F"/>
+  <text x="141.3" y="726.0" fill="#D4D4D8" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11">Spring Boot</text>
+</g>
+<g>
+  <rect x="44.0" y="744.0" width="101.4" height="28.0" rx="8" fill="#0D0D10" stroke="#222228" stroke-width="1"/>
+  <circle cx="57.0" cy="758.0" r="3" fill="#BCAE79"/>
+  <text x="66.0" y="762.0" fill="#D4D4D8" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11">Hibernate</text>
+</g>
+<g>
+  <rect x="153.4" y="744.0" width="87.7" height="28.0" rx="8" fill="#0D0D10" stroke="#222228" stroke-width="1"/>
+  <circle cx="166.4" cy="758.0" r="3" fill="#339933"/>
+  <text x="175.4" y="762.0" fill="#D4D4D8" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11">Node.js</text>
+</g>
+<g>
+  <rect x="249.1" y="744.0" width="60.5" height="28.0" rx="8" fill="#0D0D10" stroke="#222228" stroke-width="1"/>
+  <circle cx="262.1" cy="758.0" r="3" fill="#777BB4"/>
+  <text x="271.1" y="762.0" fill="#D4D4D8" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11">PHP</text>
+</g>
+<g>
+  <rect x="44.0" y="780.0" width="87.7" height="28.0" rx="8" fill="#0D0D10" stroke="#222228" stroke-width="1"/>
+  <circle cx="57.0" cy="794.0" r="3" fill="#FF2D20"/>
+  <text x="66.0" y="798.0" fill="#D4D4D8" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11">Laravel</text>
+</g>
+<g>
+  <rect x="139.7" y="780.0" width="80.9" height="28.0" rx="8" fill="#0D0D10" stroke="#222228" stroke-width="1"/>
+  <circle cx="152.7" cy="794.0" r="3" fill="#3776AB"/>
+  <text x="161.7" y="798.0" fill="#D4D4D8" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11">Python</text>
+</g>
+<g>
+  <rect x="228.6" y="780.0" width="53.6" height="28.0" rx="8" fill="#0D0D10" stroke="#222228" stroke-width="1"/>
+  <circle cx="241.6" cy="794.0" r="3" fill="#239120"/>
+  <text x="250.6" y="798.0" fill="#D4D4D8" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11">C#</text>
+</g>
+<g>
+  <rect x="44.0" y="816.0" width="60.5" height="28.0" rx="8" fill="#0D0D10" stroke="#222228" stroke-width="1"/>
+  <circle cx="57.0" cy="830.0" r="3" fill="#00599C"/>
+  <text x="66.0" y="834.0" fill="#D4D4D8" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11">C++</text>
+</g>
+
+    <line x1="344.0" y1="678" x2="344.0" y2="882" stroke="#222228" stroke-width="1"/>
+
+    <text x="356.0" y="690" fill="#FAFAFA" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11" font-weight="600" letter-spacing="1.2"><tspan fill="#FF5E1A">02 /</tspan> WEB &amp; MOBILE</text>
+    <g>
+  <rect x="356.0" y="708.0" width="108.2" height="28.0" rx="8" fill="#0D0D10" stroke="#222228" stroke-width="1"/>
+  <circle cx="369.0" cy="722.0" r="3" fill="#3178C6"/>
+  <text x="378.0" y="726.0" fill="#D4D4D8" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11">TypeScript</text>
+</g>
+<g>
+  <rect x="472.2" y="708.0" width="74.1" height="28.0" rx="8" fill="#0D0D10" stroke="#222228" stroke-width="1"/>
+  <circle cx="485.2" cy="722.0" r="3" fill="#61DAFB"/>
+  <text x="494.2" y="726.0" fill="#D4D4D8" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11">React</text>
+</g>
+<g>
+  <rect x="554.3" y="708.0" width="87.7" height="28.0" rx="8" fill="#0D0D10" stroke="#222228" stroke-width="1"/>
+  <circle cx="567.3" cy="722.0" r="3" fill="#FAFAFA"/>
+  <text x="576.3" y="726.0" fill="#D4D4D8" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11">Next.js</text>
+</g>
+<g>
+  <rect x="356.0" y="744.0" width="87.7" height="28.0" rx="8" fill="#0D0D10" stroke="#222228" stroke-width="1"/>
+  <circle cx="369.0" cy="758.0" r="3" fill="#02569B"/>
+  <text x="378.0" y="762.0" fill="#D4D4D8" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11">Flutter</text>
+</g>
+<g>
+  <rect x="451.7" y="744.0" width="67.3" height="28.0" rx="8" fill="#0D0D10" stroke="#222228" stroke-width="1"/>
+  <circle cx="464.7" cy="758.0" r="3" fill="#00B4AB"/>
+  <text x="473.7" y="762.0" fill="#D4D4D8" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11">Dart</text>
+</g>
+<g>
+  <rect x="356.0" y="780.0" width="121.8" height="28.0" rx="8" fill="#0D0D10" stroke="#222228" stroke-width="1"/>
+  <circle cx="369.0" cy="794.0" r="3" fill="#61DAFB"/>
+  <text x="378.0" y="798.0" fill="#D4D4D8" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11">React Native</text>
+</g>
+<g>
+  <rect x="485.8" y="780.0" width="121.8" height="28.0" rx="8" fill="#0D0D10" stroke="#222228" stroke-width="1"/>
+  <circle cx="498.8" cy="794.0" r="3" fill="#38BDF8"/>
+  <text x="507.8" y="798.0" fill="#D4D4D8" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11">Tailwind CSS</text>
+</g>
+
+    <line x1="656.0" y1="678" x2="656.0" y2="882" stroke="#222228" stroke-width="1"/>
+
+    <text x="668.0" y="690" fill="#FAFAFA" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11" font-weight="600" letter-spacing="1.2"><tspan fill="#FF5E1A">03 /</tspan> DATA, CLOUD &amp; IOT</text>
+    <g>
+  <rect x="668.0" y="708.0" width="74.1" height="28.0" rx="8" fill="#0D0D10" stroke="#222228" stroke-width="1"/>
+  <circle cx="681.0" cy="722.0" r="3" fill="#4479A1"/>
+  <text x="690.0" y="726.0" fill="#D4D4D8" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11">MySQL</text>
+</g>
+<g>
+  <rect x="750.1" y="708.0" width="108.2" height="28.0" rx="8" fill="#0D0D10" stroke="#222228" stroke-width="1"/>
+  <circle cx="763.1" cy="722.0" r="3" fill="#336791"/>
+  <text x="772.1" y="726.0" fill="#D4D4D8" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11">PostgreSQL</text>
+</g>
+<g>
+  <rect x="866.3" y="708.0" width="87.7" height="28.0" rx="8" fill="#0D0D10" stroke="#222228" stroke-width="1"/>
+  <circle cx="879.3" cy="722.0" r="3" fill="#47A248"/>
+  <text x="888.3" y="726.0" fill="#D4D4D8" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11">MongoDB</text>
+</g>
+<g>
+  <rect x="668.0" y="744.0" width="94.6" height="28.0" rx="8" fill="#0D0D10" stroke="#222228" stroke-width="1"/>
+  <circle cx="681.0" cy="758.0" r="3" fill="#FFCA28"/>
+  <text x="690.0" y="762.0" fill="#D4D4D8" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11">Firebase</text>
+</g>
+<g>
+  <rect x="770.6" y="744.0" width="94.6" height="28.0" rx="8" fill="#0D0D10" stroke="#222228" stroke-width="1"/>
+  <circle cx="783.6" cy="758.0" r="3" fill="#3ECF8E"/>
+  <text x="792.6" y="762.0" fill="#D4D4D8" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11">Supabase</text>
+</g>
+<g>
+  <rect x="668.0" y="780.0" width="121.8" height="28.0" rx="8" fill="#0D0D10" stroke="#222228" stroke-width="1"/>
+  <circle cx="681.0" cy="794.0" r="3" fill="#0080FF"/>
+  <text x="690.0" y="798.0" fill="#D4D4D8" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11">DigitalOcean</text>
+</g>
+<g>
+  <rect x="797.8" y="780.0" width="80.9" height="28.0" rx="8" fill="#0D0D10" stroke="#222228" stroke-width="1"/>
+  <circle cx="810.8" cy="794.0" r="3" fill="#FAFAFA"/>
+  <text x="819.8" y="798.0" fill="#D4D4D8" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11">Vercel</text>
+</g>
+<g>
+  <rect x="668.0" y="816.0" width="128.7" height="28.0" rx="8" fill="#0D0D10" stroke="#222228" stroke-width="1"/>
+  <circle cx="681.0" cy="830.0" r="3" fill="#E7352C"/>
+  <text x="690.0" y="834.0" fill="#D4D4D8" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11">ESP32/ESP8266</text>
+</g>
+<g>
+  <rect x="804.7" y="816.0" width="74.1" height="28.0" rx="8" fill="#0D0D10" stroke="#222228" stroke-width="1"/>
+  <circle cx="817.7" cy="830.0" r="3" fill="#FCC624"/>
+  <text x="826.7" y="834.0" fill="#D4D4D8" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11">Linux</text>
+</g>
+<g>
+  <rect x="668.0" y="852.0" width="87.7" height="28.0" rx="8" fill="#0D0D10" stroke="#222228" stroke-width="1"/>
+  <circle cx="681.0" cy="866.0" r="3" fill="#F5792A"/>
+  <text x="690.0" y="870.0" fill="#D4D4D8" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11">Blender</text>
+</g>
+  </g>
+
+  <!-- ===================================================================== -->
+  <!-- 4. CONTRIBUTION MATRIX (9) + VELOCITY SIDE-PANEL (3)                  -->
+  <!-- ===================================================================== -->
+  <g>
+    <rect x="20" y="918" width="716" height="264" rx="16" fill="#121215" stroke="#222228" stroke-width="1"/>
+    <text x="42" y="950" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11" font-weight="600" letter-spacing="1.4">04 // CONTRIBUTION MATRIX</text>
+    <text x="714" y="950" text-anchor="end" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10" letter-spacing="0.8">52 WEEKS • UTC+5:30</text>
+
+    <text x="42.0" y="986" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10">Dec</text><text x="98.1" y="986" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10">Jan</text><text x="154.2" y="986" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10">Feb</text><text x="210.3" y="986" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10">Mar</text><text x="266.5" y="986" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10">Apr</text><text x="322.6" y="986" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10">May</text><text x="378.7" y="986" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10">Jun</text><text x="434.8" y="986" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10">Jul</text><text x="490.9" y="986" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10">Aug</text><text x="547.0" y="986" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10">Sep</text><text x="603.2" y="986" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10">Oct</text><text x="659.3" y="986" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10">Nov</text>
+    <rect x="42.0" y="996.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="42.0" y="1009.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="42.0" y="1022.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="42.0" y="1035.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="42.0" y="1048.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="42.0" y="1061.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="42.0" y="1074.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="55.0" y="996.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="55.0" y="1009.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="55.0" y="1022.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="55.0" y="1035.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="55.0" y="1048.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="55.0" y="1061.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="55.0" y="1074.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="67.9" y="996.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="67.9" y="1009.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="67.9" y="1022.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="67.9" y="1035.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="67.9" y="1048.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="67.9" y="1061.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="67.9" y="1074.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="80.8" y="996.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="80.8" y="1009.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="80.8" y="1022.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="80.8" y="1035.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="80.8" y="1048.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="80.8" y="1061.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="80.8" y="1074.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="93.8" y="996.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="93.8" y="1009.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="93.8" y="1022.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="93.8" y="1035.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="93.8" y="1048.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="93.8" y="1061.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="93.8" y="1074.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="106.8" y="996.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="106.8" y="1009.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="106.8" y="1022.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="106.8" y="1035.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="106.8" y="1048.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="106.8" y="1061.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="106.8" y="1074.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="119.7" y="996.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="119.7" y="1009.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="119.7" y="1022.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="119.7" y="1035.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="119.7" y="1048.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="119.7" y="1061.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="119.7" y="1074.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="132.6" y="996.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="132.6" y="1009.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="132.6" y="1022.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="132.6" y="1035.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="132.6" y="1048.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="132.6" y="1061.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="132.6" y="1074.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="145.6" y="996.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="145.6" y="1009.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="145.6" y="1022.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="145.6" y="1035.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="145.6" y="1048.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="145.6" y="1061.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="145.6" y="1074.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="158.6" y="996.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="158.6" y="1009.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="158.6" y="1022.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="158.6" y="1035.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="158.6" y="1048.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="158.6" y="1061.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="158.6" y="1074.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="171.5" y="996.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="171.5" y="1009.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="171.5" y="1022.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="171.5" y="1035.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="171.5" y="1048.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="171.5" y="1061.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="171.5" y="1074.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="184.4" y="996.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="184.4" y="1009.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="184.4" y="1022.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="184.4" y="1035.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="184.4" y="1048.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="184.4" y="1061.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="184.4" y="1074.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="197.4" y="996.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="197.4" y="1009.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="197.4" y="1022.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="197.4" y="1035.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="197.4" y="1048.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="197.4" y="1061.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="197.4" y="1074.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="210.3" y="996.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="210.3" y="1009.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="210.3" y="1022.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="210.3" y="1035.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="210.3" y="1048.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="210.3" y="1061.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="210.3" y="1074.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="223.3" y="996.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="223.3" y="1009.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="223.3" y="1022.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="223.3" y="1035.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="223.3" y="1048.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="223.3" y="1061.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="223.3" y="1074.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="236.2" y="996.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="236.2" y="1009.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="236.2" y="1022.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="236.2" y="1035.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="236.2" y="1048.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="236.2" y="1061.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="236.2" y="1074.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="249.2" y="996.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="249.2" y="1009.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="249.2" y="1022.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="249.2" y="1035.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="249.2" y="1048.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="249.2" y="1061.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="249.2" y="1074.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="262.1" y="996.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="262.1" y="1009.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="262.1" y="1022.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="262.1" y="1035.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="262.1" y="1048.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="262.1" y="1061.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="262.1" y="1074.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="275.1" y="996.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="275.1" y="1009.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="275.1" y="1022.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="275.1" y="1035.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="275.1" y="1048.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="275.1" y="1061.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="275.1" y="1074.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="288.0" y="996.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="288.0" y="1009.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="288.0" y="1022.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="288.0" y="1035.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="288.0" y="1048.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="288.0" y="1061.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="288.0" y="1074.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="301.0" y="996.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="301.0" y="1009.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="301.0" y="1022.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="301.0" y="1035.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="301.0" y="1048.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="301.0" y="1061.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="301.0" y="1074.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="313.9" y="996.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="313.9" y="1009.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="313.9" y="1022.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="313.9" y="1035.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="313.9" y="1048.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="313.9" y="1061.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="313.9" y="1074.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="326.9" y="996.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="326.9" y="1009.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="326.9" y="1022.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="326.9" y="1035.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="326.9" y="1048.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="326.9" y="1061.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="326.9" y="1074.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="339.8" y="996.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="339.8" y="1009.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="339.8" y="1022.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="339.8" y="1035.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="339.8" y="1048.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="339.8" y="1061.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="339.8" y="1074.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="352.8" y="996.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="352.8" y="1009.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="352.8" y="1022.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="352.8" y="1035.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="352.8" y="1048.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="352.8" y="1061.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="352.8" y="1074.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="365.8" y="996.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="365.8" y="1009.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="365.8" y="1022.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="365.8" y="1035.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="365.8" y="1048.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="365.8" y="1061.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="365.8" y="1074.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="378.7" y="996.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="378.7" y="1009.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="378.7" y="1022.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="378.7" y="1035.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="378.7" y="1048.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="378.7" y="1061.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="378.7" y="1074.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="391.6" y="996.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="391.6" y="1009.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="391.6" y="1022.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="391.6" y="1035.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="391.6" y="1048.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="391.6" y="1061.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="391.6" y="1074.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="404.6" y="996.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="404.6" y="1009.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="404.6" y="1022.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="404.6" y="1035.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="404.6" y="1048.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="404.6" y="1061.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="404.6" y="1074.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="417.5" y="996.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="417.5" y="1009.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="417.5" y="1022.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="417.5" y="1035.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="417.5" y="1048.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="417.5" y="1061.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="417.5" y="1074.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="430.5" y="996.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="430.5" y="1009.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="430.5" y="1022.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="430.5" y="1035.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="430.5" y="1048.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="430.5" y="1061.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="430.5" y="1074.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="443.4" y="996.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="443.4" y="1009.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="443.4" y="1022.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="443.4" y="1035.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="443.4" y="1048.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="443.4" y="1061.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="443.4" y="1074.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="456.4" y="996.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="456.4" y="1009.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="456.4" y="1022.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="456.4" y="1035.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="456.4" y="1048.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="456.4" y="1061.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="456.4" y="1074.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="469.3" y="996.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="469.3" y="1009.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="469.3" y="1022.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="469.3" y="1035.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="469.3" y="1048.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="469.3" y="1061.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="469.3" y="1074.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="482.3" y="996.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="482.3" y="1009.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="482.3" y="1022.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="482.3" y="1035.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="482.3" y="1048.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="482.3" y="1061.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="482.3" y="1074.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="495.2" y="996.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="495.2" y="1009.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="495.2" y="1022.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="495.2" y="1035.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="495.2" y="1048.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="495.2" y="1061.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="495.2" y="1074.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="508.2" y="996.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="508.2" y="1009.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="508.2" y="1022.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="508.2" y="1035.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="508.2" y="1048.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="508.2" y="1061.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="508.2" y="1074.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="521.1" y="996.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="521.1" y="1009.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="521.1" y="1022.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="521.1" y="1035.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="521.1" y="1048.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="521.1" y="1061.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="521.1" y="1074.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="534.1" y="996.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="534.1" y="1009.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="534.1" y="1022.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="534.1" y="1035.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="534.1" y="1048.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="534.1" y="1061.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="534.1" y="1074.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="547.0" y="996.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="547.0" y="1009.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="547.0" y="1022.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="547.0" y="1035.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="547.0" y="1048.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="547.0" y="1061.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="547.0" y="1074.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="560.0" y="996.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="560.0" y="1009.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="560.0" y="1022.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="560.0" y="1035.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="560.0" y="1048.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="560.0" y="1061.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="560.0" y="1074.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="572.9" y="996.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="572.9" y="1009.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="572.9" y="1022.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="572.9" y="1035.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="572.9" y="1048.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="572.9" y="1061.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="572.9" y="1074.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="585.9" y="996.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="585.9" y="1009.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="585.9" y="1022.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="585.9" y="1035.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="585.9" y="1048.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="585.9" y="1061.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="585.9" y="1074.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="598.9" y="996.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="598.9" y="1009.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="598.9" y="1022.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="598.9" y="1035.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="598.9" y="1048.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="598.9" y="1061.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="598.9" y="1074.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="611.8" y="996.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="611.8" y="1009.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="611.8" y="1022.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="611.8" y="1035.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="611.8" y="1048.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="611.8" y="1061.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="611.8" y="1074.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="624.8" y="996.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="624.8" y="1009.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="624.8" y="1022.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="624.8" y="1035.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="624.8" y="1048.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="624.8" y="1061.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="624.8" y="1074.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="637.7" y="996.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="637.7" y="1009.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="637.7" y="1022.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="637.7" y="1035.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="637.7" y="1048.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="637.7" y="1061.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="637.7" y="1074.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="650.6" y="996.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="650.6" y="1009.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="650.6" y="1022.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="650.6" y="1035.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="650.6" y="1048.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/><rect x="650.6" y="1061.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="650.6" y="1074.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="663.6" y="996.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="663.6" y="1009.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="663.6" y="1022.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="663.6" y="1035.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="663.6" y="1048.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="663.6" y="1061.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="663.6" y="1074.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="676.5" y="996.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="676.5" y="1009.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="676.5" y="1022.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="676.5" y="1035.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="676.5" y="1048.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="676.5" y="1061.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="676.5" y="1074.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="689.5" y="996.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="689.5" y="1009.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="689.5" y="1022.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="689.5" y="1035.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="689.5" y="1048.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="689.5" y="1061.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="689.5" y="1074.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="702.4" y="996.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="702.4" y="1009.0" width="9.5" height="9.5" rx="2" fill="#18181D"/><rect x="702.4" y="1022.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/><rect x="702.4" y="1035.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="702.4" y="1048.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/><rect x="702.4" y="1061.0" width="9.5" height="9.5" rx="2" fill="#8C330E"/><rect x="702.4" y="1074.0" width="9.5" height="9.5" rx="2" fill="#18181D"/>
+
+    <text x="42" y="1158" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10">52-WEEK COMMIT DENSITY • UTC+5:30</text>
+    <g transform="translate(576, 1148)">
+      <text x="0" y="10" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10">LESS</text>
+      <rect x="32" y="1" width="10" height="10" rx="2" fill="#18181D"/>
+      <rect x="46" y="1" width="10" height="10" rx="2" fill="#4A1E0C"/>
+      <rect x="60" y="1" width="10" height="10" rx="2" fill="#8C330E"/>
+      <rect x="74" y="1" width="10" height="10" rx="2" fill="#CC4912"/>
+      <rect x="88" y="1" width="10" height="10" rx="2" fill="#FF5E1A"/>
+      <text x="106" y="10" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10">MORE</text>
+    </g>
+  </g>
+
+  <g>
+    <rect x="750" y="918" width="230" height="264" rx="16" fill="#121215" stroke="#222228" stroke-width="1"/>
+    <text x="772" y="950" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="11" font-weight="600" letter-spacing="1.4">VELOCITY</text>
+
+    <rect x="770" y="966" width="190" height="62" rx="12" fill="#09090B" stroke="#222228" stroke-width="1"/>
+    <text x="782" y="984" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="9.5" letter-spacing="0.8">CURRENT STREAK</text>
+    <text x="782" y="1016" fill="#FF5E1A" font-family="'Space Grotesk', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="700">14 <tspan fill="#8E8E93" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12" font-weight="400">days</tspan></text>
+
+    <rect x="770" y="1038" width="190" height="62" rx="12" fill="#09090B" stroke="#222228" stroke-width="1"/>
+    <text x="782" y="1056" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="9.5" letter-spacing="0.8">BEST STREAK</text>
+    <text x="782" y="1088" fill="#FAFAFA" font-family="'Space Grotesk', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="700">42 <tspan fill="#8E8E93" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12" font-weight="400">days</tspan></text>
+
+    <line x1="770" y1="1112" x2="960" y2="1112" stroke="#222228" stroke-width="1"/>
+    <text x="772" y="1128" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10">30D PULSE</text>
+    <text x="958" y="1128" text-anchor="end" fill="#FF5E1A" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10" font-weight="600">+18%</text>
+
+    <g transform="translate(772, 1136)">
+      <path d="M0.0,30.0 L12.4,24.8 L24.8,27.4 L37.2,17.9 L49.6,21.3 L62.0,14.4 L74.4,19.6 L86.8,9.2 L99.2,15.3 L111.6,23.1 L124.0,12.7 L136.4,7.5 L148.8,14.4 L161.2,5.7 L173.6,10.9 L186.0,4.0 L186.0,34.0 L0,34.0 Z" fill="url(#sparkFill)"/>
+      <path d="M0.0,30.0 L12.4,24.8 L24.8,27.4 L37.2,17.9 L49.6,21.3 L62.0,14.4 L74.4,19.6 L86.8,9.2 L99.2,15.3 L111.6,23.1 L124.0,12.7 L136.4,7.5 L148.8,14.4 L161.2,5.7 L173.6,10.9 L186.0,4.0" fill="none" stroke="#FF5E1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>
