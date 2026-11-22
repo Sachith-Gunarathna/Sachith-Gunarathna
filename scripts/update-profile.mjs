@@ -1,41 +1,38 @@
-// Swiss-Editorial / Asymmetric Bento OS — Automated GitHub Telemetry Generator
-// Node.js 22+, zero external dependencies. No font-paths.json needed!
+// Exact Asymmetric Bento OS Telemetry Generator (Matches github_profile_preview_sachith_gunarathna.html 1:1)
+// Node.js 22+, zero dependencies.
 import { mkdir, writeFile, rename } from 'node:fs/promises';
 import { pathToFileURL } from 'node:url';
 
 const ASSETS = new URL('../assets/', import.meta.url);
 const DAY = 86_400_000;
 
-// Change ACCENT_THEME to 'SIGNAL_ORANGE', 'ACID_LIME', or 'PURE_ICE' anytime!
-const THEMES = {
-  SIGNAL_ORANGE: { accent: '#FF5722', soft: '#2A150E', heat: ['#18181B', '#431407', '#9A3412', '#EA580C', '#FF5722'] },
-  ACID_LIME:     { accent: '#C4F53A', soft: '#1D2608', heat: ['#18181B', '#1A2E05', '#3F6212', '#84CC16', '#C4F53A'] },
-  PURE_ICE:      { accent: '#38BDF8', soft: '#082032', heat: ['#18181B', '#0C4A6E', '#0284C7', '#38BDF8', '#7DD3FC'] }
+const ACCENTS = {
+  SIGNAL_ORANGE: { accent: '#FF5E1A', heat: ['#18181D', '#4A1E0C', '#8C330E', '#CC4912', '#FF5E1A'] },
+  ACID_LIME:     { accent: '#A3E635', heat: ['#18181D', '#23360C', '#436B12', '#73B31F', '#A3E635'] },
+  PURE_ICE:      { accent: '#E4E4E7', heat: ['#18181D', '#32323A', '#5E5E6B', '#A1A1AA', '#E4E4E7'] }
 };
-const ACTIVE = THEMES[process.env.BENTO_THEME || 'SIGNAL_ORANGE'] || THEMES.SIGNAL_ORANGE;
+const THEME = ACCENTS[process.env.BENTO_THEME || 'SIGNAL_ORANGE'] || ACCENTS.SIGNAL_ORANGE;
 
-const T = {
-  bg: '#0B0B0C',
-  card: '#141416',
-  card2: '#1A1A1E',
-  border: '#27272A',
-  ink: '#FAFAFA',
-  muted: '#A1A1AA',
-  dim: '#71717A',
-  accent: ACTIVE.accent,
-  soft: ACTIVE.soft,
-  sans: "Segoe UI, Helvetica, Arial, sans-serif",
-  mono: "Consolas, Menlo, monospace"
+const C = {
+  bg: '#09090B',
+  card: '#121215',
+  border: '#222228',
+  text: '#FAFAFA',
+  muted: '#8E8E93',
+  dim: '#3F3F46',
+  accent: THEME.accent,
+  sans: 'Arial, Helvetica, sans-serif',
+  mono: 'Consolas, Courier New, monospace'
 };
 
-const LANGUAGE_COLORS = {
-  Java: '#FF5722',
+const LANG_COLORS = {
+  Java: '#FF5E1A',
   TypeScript: '#38BDF8',
-  JavaScript: '#FACC15',
   Dart: '#2DD4BF',
-  Python: '#60A5FA',
-  PHP: '#A78BFA',
+  JavaScript: '#FACC15',
+  Python: '#A78BFA',
   'C++': '#F43F5E',
+  PHP: '#818CF8',
   'C#': '#22C55E',
   HTML: '#FB923C',
   CSS: '#C084FC',
@@ -44,7 +41,6 @@ const LANGUAGE_COLORS = {
 
 const esc = (v) => String(v).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' }[c]));
 const fmt = (n) => new Intl.NumberFormat('en-US').format(n);
-const ts = (d) => d.toISOString().slice(0, 16).replace('T', ' ') + ' UTC';
 const dateMs = (d) => Date.parse(d + 'T00:00:00Z');
 
 function todayInZone(now, timeZone) {
@@ -55,11 +51,9 @@ function todayInZone(now, timeZone) {
 
 function parsePublicCalendar(html) {
   const days = new Map();
-  for (const match of html.matchAll(/<(?:td|rect)\b[^>]*\bdata-date\s*=\s*"(\d{4}-\d{2}-\d{2})"[^>]*>/gi)) {
-    const tag = match[0];
-    const date = match[1];
-    const levelMatch = tag.match(/data-level="(\d+)"/);
-    days.set(date, levelMatch ? Number(levelMatch[1]) : 0);
+  for (const m of html.matchAll(/<(?:td|rect)\b[^>]*\bdata-date\s*=\s*"(\d{4}-\d{2}-\d{2})"[^>]*>/gi)) {
+    const lvl = m[0].match(/data-level="(\d+)"/);
+    days.set(m[1], lvl ? Number(lvl[1]) : 0);
   }
   return days;
 }
@@ -71,8 +65,7 @@ function calendarWindow(source, end) {
     const date = new Date(first + i * DAY).toISOString().slice(0, 10);
     return { date, count: source.get(date) ?? 0 };
   });
-  let current = 0;
-  let idx = days.length - 1;
+  let current = 0, idx = days.length - 1;
   if (days[idx].count === 0) idx -= 1;
   while (idx >= 0 && days[idx].count > 0) { current += 1; idx -= 1; }
   let longest = 0, run = 0;
@@ -84,131 +77,140 @@ function languageShares(totals) {
   const rows = Object.entries(totals).filter(([, b]) => b > 0).sort((a, b) => b[1] - a[1]);
   const total = rows.reduce((s, [, b]) => s + b, 0) || 1;
   const visible = rows.length <= 6 ? rows : [...rows.slice(0, 5), ['Other', rows.slice(5).reduce((s, [, b]) => s + b, 0)]];
-  return visible.map(([name, bytes]) => ({ name, bytes, percent: (bytes / total) * 100, color: LANGUAGE_COLORS[name] || T.accent }));
+  return visible.map(([name, bytes]) => ({ name, pct: (bytes / total) * 100, color: LANG_COLORS[name] || C.accent }));
 }
 
-function wrapSvg(w, h, title, body) {
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-label="${esc(title)}"><rect width="${w}" height="${h}" fill="${T.bg}"/>${body}</svg>\n`;
-}
-
-function headerBar(x0, w, num, label, rightLabel) {
-  return `
-  <rect x="${x0}" y="16" width="36" height="22" rx="4" fill="${T.soft}" stroke="${T.accent}"/>
-  <text x="${x0 + 18}" y="31" fill="${T.accent}" font-family="${T.mono}" font-size="11.5" font-weight="700" text-anchor="middle">${num}</text>
-  <text x="${x0 + 48}" y="31" fill="${T.muted}" font-family="${T.mono}" font-size="12" font-weight="600" letter-spacing="1.5">${label}</text>
-  <text x="${w - x0}" y="31" fill="${T.dim}" font-family="${T.mono}" font-size="12" text-anchor="end">${esc(rightLabel)}</text>
-  <line x1="${x0}" y1="50" x2="${w - x0}" y2="50" stroke="${T.border}"/>`;
-}
-
-export function overviewSvg(data, mobile = false) {
-  const w = mobile ? 560 : 1200;
-  const h = mobile ? 430 : 250;
-  const x0 = mobile ? 24 : 32;
+// ROW 2: 5-col GitHub Pulse + 7-col Codebase Distribution (1000 x 256)
+export function telemetryRowSvg(data) {
   const stars = data.repos.reduce((s, r) => s + Number(r.stargazers_count || 0), 0);
+  const langs = languageShares(data.languages);
+
   const metrics = [
-    ['PUBLIC REPOS', fmt(data.user.public_repos), true],
-    ['FOLLOWERS', fmt(data.user.followers), false],
-    ['STARS EARNED', fmt(stars), false],
-    ['CONTRIBUTIONS (1Y)', fmt(data.calendar.total), false]
+    ['PUBLIC REPOS', fmt(data.user.public_repos), C.text, C.accent],
+    ['CONTRIBUTIONS', fmt(data.calendar.total), C.accent, C.accent],
+    ['FOLLOWERS', fmt(data.user.followers), C.text, C.dim],
+    ['STARS', fmt(stars), C.text, C.dim]
   ];
-  let body = headerBar(x0, w, '04', 'GITHUB TELEMETRY', `SYNCED ${ts(data.now)}`);
-  metrics.forEach(([label, val, highlight], i) => {
-    const cw = mobile ? 248 : 272;
-    const ch = 148;
-    const x = x0 + (mobile ? (i % 2) * 264 : i * 288);
-    const y = mobile ? 70 + Math.floor(i / 2) * 164 : 72;
-    const fill = highlight ? T.accent : T.card;
-    const stroke = highlight ? T.accent : T.border;
-    const lc = highlight ? '#0B0B0C' : T.muted;
-    const vc = highlight ? '#0B0B0C' : T.ink;
-    body += `<rect x="${x}" y="${y}" width="${cw}" height="${ch}" rx="14" fill="${fill}" stroke="${stroke}" stroke-width="1.2"/>`;
-    body += `<text x="${x + 22}" y="${y + 34}" fill="${lc}" font-family="${T.mono}" font-size="11.5" font-weight="700" letter-spacing="1">${label}</text>`;
-    body += `<text x="${x + 22}" y="${y + 114}" fill="${vc}" font-family="${T.sans}" font-size="54" font-weight="900" letter-spacing="-2">${val}</text>`;
+
+  let pulseCards = '';
+  metrics.forEach(([label, val, valCol, dotCol], i) => {
+    const x = 32 + (i % 2) * 184;
+    const y = 62 + Math.floor(i / 2) * 88;
+    pulseCards += `
+    <rect x="${x}" y="${y}" width="174" height="78" rx="12" fill="${C.bg}" stroke="${C.border}"/>
+    <text x="${x + 14}" y="${y + 22}" fill="${C.muted}" font-family="${C.mono}" font-size="9.5" letter-spacing="0.8">${label}</text>
+    <circle cx="${x + 158}" cy="${y + 19}" r="3" fill="${dotCol}"/>
+    <text x="${x + 14}" y="${y + 60}" fill="${valCol}" font-family="${C.sans}" font-size="30" font-weight="800">${val}</text>`;
   });
-  return wrapSvg(w, h, 'GitHub Telemetry', body);
-}
 
-export function languagesSvg(data, mobile = false) {
-  const rows = languageShares(data.languages);
-  const w = mobile ? 560 : 1200;
-  const h = mobile ? 440 : 290;
-  const x0 = mobile ? 24 : 32;
-  let body = headerBar(x0, w, '05', 'CODEBASE DISTRIBUTION', 'BY PUBLIC SOURCE BYTES');
-  if (!rows.length) {
-    body += `<text x="${x0}" y="120" fill="${T.muted}" font-family="${T.mono}" font-size="14">No public language data yet.</text>`;
-    return wrapSvg(w, 180, 'Languages', body);
-  }
-
-  // Stacked Horizontal Swiss Bar
-  const barX = x0, barY = 74, barW = w - x0 * 2, barH = 22;
+  // Segmented horizontal bar
+  const barX = 448, barY = 98, barW = 516, barH = 16;
+  let barSegs = `<rect x="${barX - 4}" y="${barY - 4}" width="${barW + 8}" height="${barH + 8}" rx="8" fill="${C.bg}" stroke="${C.border}"/>`;
   let curX = barX;
-  body += `<rect x="${barX}" y="${barY}" width="${barW}" height="${barH}" rx="6" fill="${T.card2}"/>`;
-  rows.forEach((row) => {
-    const segW = Math.max(4, (row.percent / 100) * barW - 3);
-    body += `<rect x="${curX.toFixed(1)}" y="${barY}" width="${segW.toFixed(1)}" height="${barH}" rx="4" fill="${row.color}"/>`;
-    curX += (row.percent / 100) * barW;
+  langs.forEach((l) => {
+    const w = Math.max(4, (l.pct / 100) * barW - 3);
+    barSegs += `<rect x="${curX.toFixed(1)}" y="${barY}" width="${w.toFixed(1)}" height="${barH}" rx="3" fill="${l.color}"/>`;
+    curX += (l.pct / 100) * barW;
   });
 
-  // Language Cards Grid
-  const cols = mobile ? 2 : 3;
-  const gap = 16;
-  const cw = (w - x0 * 2 - gap * (cols - 1)) / cols;
-  rows.forEach((row, i) => {
-    const col = i % cols, r = Math.floor(i / cols);
-    const x = x0 + col * (cw + gap);
-    const y = 114 + r * 82;
-    body += `<rect x="${x.toFixed(1)}" y="${y}" width="${cw.toFixed(1)}" height="68" rx="10" fill="${T.card}" stroke="${T.border}"/>`;
-    body += `<rect x="${(x + 16).toFixed(1)}" y="${y + 22}" width="8" height="24" rx="3" fill="${row.color}"/>`;
-    body += `<text x="${(x + 36).toFixed(1)}" y="${y + 39}" fill="${T.ink}" font-family="${T.sans}" font-size="16" font-weight="700">${esc(row.name)}</text>`;
-    body += `<text x="${(x + cw - 18).toFixed(1)}" y="${y + 40}" fill="${T.muted}" font-family="${T.mono}" font-size="15" font-weight="700" text-anchor="end">${row.percent.toFixed(1)}%</text>`;
+  // 2-row x 3-col dot legend
+  let legend = '';
+  langs.forEach((l, i) => {
+    const col = i % 3, row = Math.floor(i / 3);
+    const x = 448 + col * 176;
+    const y = 166 + row * 34;
+    legend += `
+    <circle cx="${x + 5}" cy="${y - 4}" r="4" fill="${l.color}"/>
+    <text x="${x + 16}" y="${y}" fill="${C.text}" font-family="${C.sans}" font-size="12.5" font-weight="600">${esc(l.name)}</text>
+    <text x="${x + 158}" y="${y}" fill="${C.muted}" font-family="${C.mono}" font-size="11.5" text-anchor="end">${l.pct.toFixed(1)}%</text>`;
   });
-  return wrapSvg(w, h, 'Most Used Languages', body);
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="256" viewBox="0 0 1000 256" role="img" aria-label="GitHub Pulse and Codebase Distribution">
+  <rect width="1000" height="256" fill="${C.bg}"/>
+
+  <!-- Left 5-col Card: GitHub Pulse -->
+  <rect x="12" y="6" width="398" height="244" rx="16" fill="${C.card}" stroke="${C.border}"/>
+  <text x="32" y="38" fill="${C.muted}" font-family="${C.mono}" font-size="11" font-weight="700" letter-spacing="1.4">01 // GITHUB PULSE</text>
+  <circle cx="386" cy="34" r="3.5" fill="${C.accent}"/>
+  ${pulseCards}
+
+  <!-- Right 7-col Card: Codebase Distribution -->
+  <rect x="424" y="6" width="564" height="244" rx="16" fill="${C.card}" stroke="${C.border}"/>
+  <text x="448" y="38" fill="${C.muted}" font-family="${C.mono}" font-size="11" font-weight="700" letter-spacing="1.4">02 // CODEBASE DISTRIBUTION</text>
+  <text x="964" y="38" fill="${C.muted}" font-family="${C.mono}" font-size="10" text-anchor="end">PUBLIC SOURCE BYTES</text>
+  ${barSegs}
+  ${legend}
+</svg>\n`;
 }
 
-export function contributionsSvg(data, mobile = false) {
-  const { days, total, current, longest } = data.calendar;
-  const w = mobile ? 560 : 1200;
-  const h = mobile ? 430 : 340;
-  const x0 = mobile ? 24 : 32;
-  let body = headerBar(x0, w, '06', 'CONTRIBUTION CONSISTENCY', `${days[0].date} -> ${days.at(-1).date}`);
-
-  // 3 Streak Metric Pills
-  const stats = [
-    ['YEAR TOTAL', fmt(total), T.ink],
-    ['CURRENT STREAK', `${current}d`, T.accent],
-    ['BEST STREAK', `${longest}d`, '#22C55E']
-  ];
-  const sw = (w - x0 * 2 - 32) / 3;
-  stats.forEach(([label, val, col], i) => {
-    const x = x0 + i * (sw + 16);
-    body += `<rect x="${x.toFixed(1)}" y="68" width="${sw.toFixed(1)}" height="74" rx="12" fill="${T.card}" stroke="${T.border}"/>`;
-    body += `<text x="${(x + 18).toFixed(1)}" y="94" fill="${T.muted}" font-family="${T.mono}" font-size="10.5" font-weight="700">${label}</text>`;
-    body += `<text x="${(x + 18).toFixed(1)}" y="128" fill="${col}" font-family="${T.sans}" font-size="28" font-weight="900">${val}</text>`;
-  });
-
-  // Heatmap Container
-  const mapY = 158, mapH = mobile ? 248 : 164;
-  body += `<rect x="${x0}" y="${mapY}" width="${w - x0 * 2}" height="${mapH}" rx="14" fill="${T.card}" stroke="${T.border}"/>`;
-
-  const sliceDays = mobile ? days.slice(-112) : days;
-  const first = dateMs(sliceDays[0].date);
+// ROW 4: 9-col Contribution Matrix + 3-col Velocity Panel (1000 x 258)
+export function contributionVelocitySvg(data) {
+  const { days, current, longest } = data.calendar;
+  const first = dateMs(days[0].date);
   const start = first - new Date(first).getUTCDay() * DAY;
-  const max = Math.max(1, ...sliceDays.map((d) => d.count));
-  const step = mobile ? 30 : 20.5;
-  const size = mobile ? 24 : 15.5;
-  const gx = x0 + (mobile ? 18 : 26);
-  const gy = mapY + (mobile ? 22 : 14);
+  const max = Math.max(1, ...days.map((d) => d.count));
 
-  sliceDays.forEach((d) => {
-    const time = dateMs(d.date);
-    const offset = Math.round((time - start) / DAY);
-    const col = Math.floor(offset / 7);
-    const row = offset % 7;
+  let cells = '';
+  const step = 12.8, size = 9.8, gx = 36, gy = 78;
+  days.forEach((d) => {
+    const off = Math.round((dateMs(d.date) - start) / DAY);
+    const col = Math.floor(off / 7), row = off % 7;
+    if (col > 52) return;
     const lvl = d.count === 0 ? 0 : Math.min(4, Math.max(1, Math.ceil((d.count / max) * 4)));
-    body += `<rect x="${(gx + col * step).toFixed(1)}" y="${(gy + row * step).toFixed(1)}" width="${size}" height="${size}" rx="3" fill="${ACTIVE.heat[lvl]}"><title>${d.date}: ${d.count}</title></rect>`;
+    cells += `<rect x="${(gx + col * step).toFixed(1)}" y="${(gy + row * step).toFixed(1)}" width="${size}" height="${size}" rx="2" fill="${THEME.heat[lvl]}"><title>${d.date}: ${d.count}</title></rect>`;
   });
 
-  return wrapSvg(w, h, 'Contribution Consistency', body);
+  // Month labels
+  const months = ['Dec','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov'];
+  const monthLabels = months.map((m, i) => `<text x="${36 + i * 56}" y="66" fill="${C.muted}" font-family="${C.mono}" font-size="10">${m}</text>`).join('');
+
+  // 30D Sparkline
+  const recent = days.slice(-30);
+  const rMax = Math.max(1, ...recent.map((d) => d.count));
+  const pts = recent.map((d, i) => [776 + i * 6.4, 232 - (d.count / rMax) * 28]);
+  const lineD = 'M' + pts.map(([x, y]) => `${x.toFixed(1)},${y.toFixed(1)}`).join(' L');
+  const areaD = `${lineD} L${pts.at(-1)[0].toFixed(1)},234 L776,234 Z`;
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="258" viewBox="0 0 1000 258" role="img" aria-label="Contribution Matrix and Velocity">
+  <defs>
+    <linearGradient id="sparkFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="${C.accent}" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="${C.accent}" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="258" fill="${C.bg}"/>
+
+  <!-- Left 9-col Card: 52-Week Heatmap -->
+  <rect x="12" y="6" width="728" height="246" rx="16" fill="${C.card}" stroke="${C.border}"/>
+  <text x="36" y="38" fill="${C.muted}" font-family="${C.mono}" font-size="11" font-weight="700" letter-spacing="1.4">04 // CONTRIBUTION MATRIX</text>
+  <text x="716" y="38" fill="${C.muted}" font-family="${C.mono}" font-size="10" text-anchor="end">52 WEEKS • UTC+5:30</text>
+  ${monthLabels}
+  ${cells}
+
+  <!-- Legend -->
+  <text x="36" y="232" fill="${C.muted}" font-family="${C.mono}" font-size="10">Automated daily GitHub telemetry</text>
+  <text x="580" y="232" fill="${C.muted}" font-family="${C.mono}" font-size="9.5">LESS</text>
+  ${THEME.heat.map((h, i) => `<rect x="${614 + i * 14}" y="223" width="10" height="10" rx="2" fill="${h}"/>`).join('')}
+  <text x="688" y="232" fill="${C.muted}" font-family="${C.mono}" font-size="9.5">MORE</text>
+
+  <!-- Right 3-col Card: Velocity Panel -->
+  <rect x="754" y="6" width="234" height="246" rx="16" fill="${C.card}" stroke="${C.border}"/>
+  <text x="774" y="36" fill="${C.muted}" font-family="${C.mono}" font-size="11" font-weight="700" letter-spacing="1.4">VELOCITY</text>
+
+  <rect x="774" y="52" width="194" height="58" rx="10" fill="${C.bg}" stroke="${C.border}"/>
+  <text x="786" y="72" fill="${C.muted}" font-family="${C.mono}" font-size="9.5">CURRENT STREAK</text>
+  <text x="786" y="99" fill="${C.accent}" font-family="${C.sans}" font-size="24" font-weight="800">${current} <tspan fill="${C.muted}" font-size="12" font-weight="400">days</tspan></text>
+
+  <rect x="774" y="120" width="194" height="58" rx="10" fill="${C.bg}" stroke="${C.border}"/>
+  <text x="786" y="140" fill="${C.muted}" font-family="${C.mono}" font-size="9.5">BEST STREAK</text>
+  <text x="786" y="167" fill="${C.text}" font-family="${C.sans}" font-size="24" font-weight="800">${longest} <tspan fill="${C.muted}" font-size="12" font-weight="400">days</tspan></text>
+
+  <line x1="774" y1="188" x2="968" y2="188" stroke="${C.border}"/>
+  <text x="774" y="203" fill="${C.muted}" font-family="${C.mono}" font-size="9.5">30D PULSE</text>
+  <text x="968" y="203" fill="${C.accent}" font-family="${C.mono}" font-size="9.5" text-anchor="end">LIVE</text>
+  <path d="${areaD}" fill="url(#sparkFill)"/>
+  <path d="${lineD}" fill="none" stroke="${C.accent}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>\n`;
 }
 
 async function collectProfile({ userName, token = '', now = new Date(), timeZone = 'Asia/Colombo' }) {
@@ -247,7 +249,7 @@ async function collectProfile({ userName, token = '', now = new Date(), timeZone
       });
       const weeks = gql.data?.user?.contributionsCollection?.contributionCalendar?.weeks || [];
       source = new Map(weeks.flatMap((w) => w.contributionDays.map((d) => [d.date, d.contributionCount])));
-    } catch { /* fallback below */ }
+    } catch { /* fallback */ }
   }
   if (!source) {
     const html = await req(`https://github.com/users/${userPart}/contributions?from=${start}&to=${end}`, {}, true);
@@ -260,17 +262,13 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
   const userName = process.env.PROFILE_USER || 'Sachith-Gunarathna';
   const data = await collectProfile({ userName, token: process.env.GITHUB_TOKEN || '', timeZone: 'Asia/Colombo' });
   const cards = {
-    'github-overview.svg': overviewSvg(data, false),
-    'github-overview-mobile.svg': overviewSvg(data, true),
-    'languages.svg': languagesSvg(data, false),
-    'languages-mobile.svg': languagesSvg(data, true),
-    'contributions.svg': contributionsSvg(data, false),
-    'contributions-mobile.svg': contributionsSvg(data, true)
+    '02-telemetry-row.svg': telemetryRowSvg(data),
+    '04-contribution-velocity.svg': contributionVelocitySvg(data)
   };
   await mkdir(ASSETS, { recursive: true });
   for (const [name, content] of Object.entries(cards)) {
     await writeFile(new URL(name + '.tmp', ASSETS), content, 'utf8');
     await rename(new URL(name + '.tmp', ASSETS), new URL(name, ASSETS));
   }
-  console.log(`Updated ${Object.keys(cards).length} Swiss-Editorial Bento cards for ${userName}`);
+  console.log(`Updated exact Bento OS telemetry SVGs for ${userName}`);
 }

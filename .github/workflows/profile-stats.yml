@@ -1,4 +1,4 @@
-name: Refresh Swiss-Editorial Bento Cards
+name: Refresh Bento OS Telemetry
 
 on:
   schedule:
@@ -14,25 +14,25 @@ permissions:
   contents: write
 
 jobs:
-  update-cards:
+  update:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Generate Live Bento Telemetry SVGs
+      - name: Generate Exact Bento OS Telemetry SVGs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PROFILE_USER: Sachith-Gunarathna
           BENTO_THEME: SIGNAL_ORANGE
         run: node scripts/update-profile.mjs
-      - name: Commit Updated SVGs
+      - name: Commit SVGs
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/*.svg
+          git add assets/02-telemetry-row.svg assets/04-contribution-velocity.svg
           if ! git diff --cached --quiet; then
-            git commit -m "chore: refresh Swiss-Editorial Bento telemetry"
+            git commit -m "chore: refresh Bento OS telemetry"
             git push
           fi
