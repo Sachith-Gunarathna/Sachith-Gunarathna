@@ -1,0 +1,38 @@
+name: Refresh Swiss-Editorial Bento Cards
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/update-profile.mjs'
+      - '.github/workflows/profile-stats.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  update-cards:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Generate Live Bento Telemetry SVGs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_USER: Sachith-Gunarathna
+          BENTO_THEME: SIGNAL_ORANGE
+        run: node scripts/update-profile.mjs
+      - name: Commit Updated SVGs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/*.svg
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: refresh Swiss-Editorial Bento telemetry"
+            git push
+          fi

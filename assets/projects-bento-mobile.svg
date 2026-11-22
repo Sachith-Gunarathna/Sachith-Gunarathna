@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="580" viewBox="0 0 560 580" role="img" aria-label="Selected Systems">
+  <rect width="560" height="580" fill="#0B0B0C"/>
+  <rect x="24" y="16" width="36" height="22" rx="4" fill="#2A150E" stroke="#FF5722"/>
+  <text x="42" y="31" fill="#FF5722" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="700" text-anchor="middle">03</text>
+  <text x="72" y="31" fill="#A1A1AA" font-family="Consolas, Menlo, monospace" font-size="12" font-weight="600">SELECTED SYSTEMS</text>
+  <line x1="24" y1="50" x2="536" y2="50" stroke="#27272A"/>
+
+  <rect x="24" y="68" width="512" height="114" rx="12" fill="#141416" stroke="#27272A"/>
+  <text x="44" y="100" fill="#FAFAFA" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="18" font-weight="800">EcoGrid EV Network</text>
+  <text x="44" y="126" fill="#A1A1AA" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5">EV charging app, PayHere &amp; ESP-12E IoT relay.</text>
+  <text x="44" y="158" fill="#FF5722" font-family="Consolas, Menlo, monospace" font-size="11.5">FLUTTER • FIREBASE • ESP8266</text>
+
+  <rect x="24" y="196" width="512" height="114" rx="12" fill="#141416" stroke="#27272A"/>
+  <text x="44" y="228" fill="#FAFAFA" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="18" font-weight="800">Nenaverse EdTech Platform</text>
+  <text x="44" y="254" fill="#A1A1AA" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5">Flutter client, React admin &amp; Spring Boot API.</text>
+  <text x="44" y="286" fill="#FF5722" font-family="Consolas, Menlo, monospace" font-size="11.5">FLUTTER • SPRING BOOT • REACT</text>
+
+  <rect x="24" y="324" width="512" height="114" rx="12" fill="#141416" stroke="#27272A"/>
+  <text x="44" y="356" fill="#FAFAFA" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="18" font-weight="800">Commercial AI POS Suite</text>
+  <text x="44" y="382" fill="#A1A1AA" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5">Hybrid offline/online POS &amp; Jaspersoft reports.</text>
+  <text x="44" y="414" fill="#FF5722" font-family="Consolas, Menlo, monospace" font-size="11.5">JAVA • HIBERNATE • MYSQL</text>
+
+  <rect x="24" y="452" width="512" height="114" rx="12" fill="#141416" stroke="#27272A"/>
+  <text x="44" y="484" fill="#FAFAFA" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="18" font-weight="800">Nexcentauri Cloud &amp; VPN</text>
+  <text x="44" y="510" fill="#A1A1AA" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5">Self-hosted 3x-ui VPN &amp; Next.js billing dashboard.</text>
+  <text x="44" y="542" fill="#FF5722" font-family="Consolas, Menlo, monospace" font-size="11.5">NEXT.JS • DIGITALOCEAN • PAYHERE</text>
+</svg>

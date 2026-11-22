@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="110" viewBox="0 0 300 110" role="img" aria-label="Website">
+  <rect width="300" height="110" fill="#0B0B0C"/>
+  <rect x="6" y="8" width="288" height="94" rx="12" fill="#FF5722" stroke="#FF5722" stroke-width="1.2"/>
+  <text x="26" y="48" fill="#0B0B0C" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="21" font-weight="800">Website</text>
+  <text x="26" y="76" fill="#2A150E" font-family="Consolas, Menlo, monospace" font-size="12" font-weight="600">nexcentauri.com</text>
+  <text x="268" y="50" fill="#0B0B0C" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22" font-weight="800" text-anchor="end">↗</text>
+</svg>

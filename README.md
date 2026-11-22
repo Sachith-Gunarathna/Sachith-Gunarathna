@@ -1,175 +1,68 @@
 <div align="center">
-<img src="https://github.com/Sachith-Gunarathna/Sachith-Gunarathna/blob/main/banner.gif" align="center" style="width: 100%" />
-</div>  
-  
 
-### <div align="center">Hi 👋, I'm Sachith Gunarathna</div>  
-
-<br/>
-
-<div align="center">
-
-  <img src="https://techstack-generator.vercel.app/java-icon.svg" alt="icon" width="50" height="50" />  
-      <img src="https://techstack-generator.vercel.app/python-icon.svg" alt="icon" width="50" height="50" />
-      <img src="https://techstack-generator.vercel.app/ts-icon.svg" alt="icon" width="50" height="50" />
-      <img src="https://techstack-generator.vercel.app/js-icon.svg" alt="icon" width="50" height="50" />
-      <img src="https://techstack-generator.vercel.app/react-icon.svg" alt="icon" width="50" height="50" />
-      <img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="icon" width="50" height="50" />
-      <br/>
-      <img src="https://techstack-generator.vercel.app/cpp-icon.svg" alt="icon" width="50" height="50" />
-      <img src="https://techstack-generator.vercel.app/csharp-icon.svg" alt="icon" width="50" height="50" />
-      <img src="https://techstack-generator.vercel.app/github-icon.svg" alt="icon" width="50" height="50" />
-      <img src="https://techstack-generator.vercel.app/raspberrypi-icon.svg" alt="icon" width="50" height="50" />
-      <img src="https://techstack-generator.vercel.app/restapi-icon.svg" alt="icon" width="50" height="50" />
-      <img src="https://techstack-generator.vercel.app/graphql-icon.svg" alt="icon" width="50" height="50" />
-  
-  <!-- <table>
-    <tr>
-      <td><img src="https://techstack-generator.vercel.app/java-icon.svg" alt="icon" width="50" height="50" /></td>
-      <td><img src="https://techstack-generator.vercel.app/python-icon.svg" alt="icon" width="50" height="50" /></td>
-      <td><img src="https://techstack-generator.vercel.app/ts-icon.svg" alt="icon" width="50" height="50" /></td>
-      <td><img src="https://techstack-generator.vercel.app/js-icon.svg" alt="icon" width="50" height="50" /></td>
-      <td><img src="https://techstack-generator.vercel.app/react-icon.svg" alt="icon" width="50" height="50" /></td>
-      <td><img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="icon" width="50" height="50" /></td>
-    </tr>
-  </table>
-  <br/>
-  <table>
-    <tr>
-      <td><img src="https://techstack-generator.vercel.app/cpp-icon.svg" alt="icon" width="50" height="50" /></td>
-      <td><img src="https://techstack-generator.vercel.app/csharp-icon.svg" alt="icon" width="50" height="50" /></td>
-      <td><img src="https://techstack-generator.vercel.app/github-icon.svg" alt="icon" width="50" height="50" /></td>
-      <td><img src="https://techstack-generator.vercel.app/raspberrypi-icon.svg" alt="icon" width="50" height="50" /></td>
-      <td><img src="https://techstack-generator.vercel.app/restapi-icon.svg" alt="icon" width="50" height="50" /></td>
-      <td><img src="https://techstack-generator.vercel.app/graphql-icon.svg" alt="icon" width="50" height="50" /></td>
-    </tr>
-  </table> -->
-</div>
-
-<br/>
-<div align="center">
-  
- 🔭 I’m currently Studying at Java Institute top up on Birmingham City University  
-  
-
- 🌱 I’m currently learning React, JavaScript, Java,  GSAP, 
- .Net, C++, C#  
-  
-
-📫 How to reach me sachithniromal918@gmail.com  
-  
-
- ❓ Ask me about HTML 5, CSS, JavaScript, Bootstrap 5, PHP, Java , React Native 
-  
-</div>
-
-<br/>  
-<div align="center">
-<img src="https://komarev.com/ghpvc/?username=Sachith-Gunarathna&&style=flat-square" align="center" />
-</div> 
-<br/>
-<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
-<br/>
-
-<h3 align="left">Connect with me:</h3>
-<div align="center">
-  <a href="https://www.linkedin.com/in/sachith-ng" target="_blank">
-    <img src=https://custom-icon-badges.demolab.com/badge/LinkedIn-0A66C2?logo=linkedin-white&logoColor=fff alt=linkedin style="margin-bottom: 5px;" />
-  </a>
-  <a href="https://web.facebook.com/sachith.n.21/" target="_blank">
-    <img src=https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white alt=facebook style="margin-bottom: 5px;" />
-  </a>
-  <a href="https://www.instagram.com/sachith_gunarathna/" target="_blank">
-    <img src=https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white alt=instagram style="margin-bottom: 5px;" />
-  </a>
-  <a href="https://www.youtube.com/@foxeegaminglk" target="_blank">
-    <img src=https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white alt=youtube style="margin-bottom: 5px;" />
-  </a> 
-  <a href="https://www.tiktok.com/@sachi_ng_" target="_blank">
-    <img src=https://img.shields.io/badge/TikTok-black?logo=tiktok&logoColor=white alt=tiktok style="margin-bottom: 5px;" />
-  </a> 
-</div>  
-
-<br/>  
-<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
-<br/>
-
-<h3 align="left">Languages and Tools:</h3>
-
-- Backend 
-<p align="left">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=php,laravel,java,nodejs,py,spring,express,nestjs,cs,cpp,raspberrypi" />
-  </a>
-</p>
-
-- Frontend
-<p align="left">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,tailwind,bootstrap" />
-  </a>
-</p>
-
-- Database
-<p alight="left">
-<a href="https://skillicons.dev">
-   <img src="https://skillicons.dev/icons?i=mongodb,mysql,postgresql" />
-  </a> 
-</p>
-
-- Tools
-<p align="left">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=git,github,figma,xd,vscode,blender,arduino,unreal,unity" />
-  </a>
-</p>
-<br/>  
-<br/>
-
-<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
-
-<h3 align="left">GitHub Stats:</h3>
-<div align="center">
-
-[![Top Langs](https://github-readme-stats.shion.dev/api/top-langs/?username=Sachith-Gunarathna&layout=compact&theme=radical)](https://github.com/Sachith-Gunarathna)
-<br/>
-
-<a href="https://git.io/streak-stats"><img src="https://streak-stats.demolab.com?user=Sachith-Gunarathna&theme=tokyonight-duo&hide_border=true" alt="GitHub Streak" /></a>
-
-</div>
-<br><br>
-
-<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
-
-<h3 align="left">Activity:</h3>
+<!-- 01 // SWISS-EDITORIAL HERO BENTO -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sachith-Gunarathna/GitHub-status-bar-system/main/assets/system-metrics-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sachith-Gunarathna/GitHub-status-bar-system/main/assets/system-metrics-light.svg">
-  <img width="100%" alt="GitHub System Metrics" src="https://raw.githubusercontent.com/Sachith-Gunarathna/GitHub-status-bar-system/main/assets/system-metrics-light.svg">
+  <source media="(max-width: 600px)" srcset="assets/hero-bento-mobile.svg">
+  <img align="top" src="assets/hero-bento.svg" width="100%" alt="Sachith Gunarathna — Co-Founder & Lead Software Engineer">
 </picture>
-<br><br>
+
+<!-- 02 // IDENTITY & EXPERIENCE -->
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/about-bento-mobile.svg">
+  <img align="top" src="assets/about-bento.svg" width="100%" alt="About Sachith Gunarathna">
+</picture>
+
+<!-- 03 // SELECTED SYSTEMS & ARCHITECTURES -->
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/projects-bento-mobile.svg">
+  <img align="top" src="assets/projects-bento.svg" width="100%" alt="Selected Systems and Products">
+</picture>
+
+<!-- 04 // GITHUB TELEMETRY (AUTO-UPDATED) -->
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/github-overview-mobile.svg">
+  <img align="top" src="assets/github-overview.svg" width="100%" alt="GitHub Telemetry">
+</picture>
+
+<!-- 05 // CODEBASE DISTRIBUTION (AUTO-UPDATED) -->
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/languages-mobile.svg">
+  <img align="top" src="assets/languages.svg" width="100%" alt="Most Used Languages">
+</picture>
+
+<!-- 06 // CONTRIBUTION CONSISTENCY (AUTO-UPDATED) -->
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/contributions-mobile.svg">
+  <img align="top" src="assets/contributions.svg" width="100%" alt="Contribution History">
+</picture>
+
+<br/>
+
+<!-- ENGINEERING ARSENAL -->
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=java,spring,ts,js,react,nextjs,flutter,dart,nodejs,php,laravel,py,cpp,cs&perline=14" alt="Languages & Frameworks" />
+</p>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=mysql,postgresql,mongodb,firebase,supabase,prisma,tailwind,linux,git,github,arduino,figma,blender,unity&perline=14" alt="Databases, Cloud & Tools" />
+</p>
+
+<br/>
+
+<!-- YOUR LIVE STATUS BAR SYSTEM INTEGRATION -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sachith-Gunarathna/GitHub-status-bar-system/main/assets/dev-signal-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sachith-Gunarathna/GitHub-status-bar-system/main/assets/dev-signal-light.svg">
-  <img width="100%" alt="SACHITH Dev Signal" src="https://raw.githubusercontent.com/Sachith-Gunarathna/GitHub-status-bar-system/main/assets/dev-signal-light.svg">
+  <img width="100%" alt="SACHITH Dev Signal" src="https://raw.githubusercontent.com/Sachith-Gunarathna/GitHub-status-bar-system/main/assets/dev-signal-dark.svg">
 </picture>
-<br><br>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sachith-Gunarathna/GitHub-status-bar-system/main/assets/contribution-signal-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sachith-Gunarathna/GitHub-status-bar-system/main/assets/contribution-signal-light.svg">
-  <img width="100%" alt="Contribution Signal Graph" src="https://raw.githubusercontent.com/Sachith-Gunarathna/GitHub-status-bar-system/main/assets/contribution-signal-light.svg">
-</picture>
-<br><br>
-<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
 
-<h3 align="left">Achievements:</h3>
+<br/><br/>
 
-[![An image of @sachith's Holopin badges, which is a link to view their full Holopin profile](https://holopin.me/sachith)](https://holopin.io/@sachith)
-<br><br><br>
+<!-- CLICKABLE BENTO CONNECT BAR -->
+<p align="center">
+  <a href="https://nexcentauri.com" target="_blank"><img src="assets/connect-website.svg" width="24.5%" alt="Website"></a><a href="https://www.linkedin.com/in/sachith-ng" target="_blank"><img src="assets/connect-linkedin.svg" width="24.5%" alt="LinkedIn"></a><a href="mailto:sachithniromal918@gmail.com"><img src="assets/connect-email.svg" width="24.5%" alt="Email"></a><a href="https://www.youtube.com/@foxeegaminglk" target="_blank"><img src="assets/connect-youtube.svg" width="24.5%" alt="YouTube"></a>
+</p>
 
-<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
+<!-- FOOTER -->
+<img align="top" src="assets/footer-bento.svg" width="100%" alt="Sachith Gunarathna Footer">
 
-<img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="60"> <em><b>I love connecting with different people</b> so if you want to say <b>hi, I'll be happy to meet you more!</b> :)</em>
-
-<br/>
-<img src="https://github.com/Sachith-Gunarathna/Sachith-Gunarathna/blob/main/heartbeat.svg" width="100%"/>
+</div>

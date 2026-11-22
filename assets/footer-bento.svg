@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="84" viewBox="0 0 1200 84" role="img" aria-label="Footer">
+  <rect width="1200" height="84" fill="#0B0B0C"/>
+  <line x1="32" y1="16" x2="1168" y2="16" stroke="#27272A"/>
+  <text x="32" y="52" fill="#FAFAFA" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="700">SACHITH GUNARATHNA</text>
+  <text x="235" y="52" fill="#71717A" font-family="Consolas, Menlo, monospace" font-size="12">// CO-FOUNDER @ NEXCENTAURI</text>
+  <text x="1168" y="52" fill="#A1A1AA" font-family="Consolas, Menlo, monospace" font-size="12" text-anchor="end">SWISS-EDITORIAL BENTO OS  •  SRI LANKA</text>
+</svg>

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-label="Sachith Gunarathna — Co-Founder &amp; Lead Software Engineer">
+  <defs>
+    <pattern id="swissGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1E1E22" stroke-width="0.8"/>
+    </pattern>
+    <radialGradient id="orangeGlow" cx="0.92" cy="0.12" r="0.45">
+      <stop offset="0%" stop-color="#FF5722" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#FF5722" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <style>
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+    .pulse { animation: pulse 2s ease-in-out infinite; }
+  </style>
+
+  <!-- Canvas -->
+  <rect width="1200" height="420" fill="#0B0B0C"/>
+
+  <!-- Top Editorial Bar -->
+  <text x="32" y="34" fill="#A1A1AA" font-family="Consolas, Menlo, monospace" font-size="12" font-weight="600" letter-spacing="1.5">SACHITH.OS // BUILD 2026.11</text>
+  <circle class="pulse" cx="1018" cy="30" r="4.5" fill="#22C55E"/>
+  <text x="1032" y="34" fill="#FAFAFA" font-family="Consolas, Menlo, monospace" font-size="12" font-weight="600" letter-spacing="1">OPEN TO COLLABORATE</text>
+  <line x1="32" y1="50" x2="1168" y2="50" stroke="#27272A" stroke-width="1"/>
+
+  <!-- Left Main Hero Bento Card (Asymmetric 740px) -->
+  <rect x="32" y="68" width="748" height="332" rx="14" fill="#141416" stroke="#27272A" stroke-width="1.2"/>
+  <rect x="32" y="68" width="748" height="332" rx="14" fill="url(#swissGrid)" opacity="0.55"/>
+  <rect x="32" y="68" width="748" height="332" rx="14" fill="url(#orangeGlow)"/>
+
+  <!-- Index Eyebrow -->
+  <rect x="64" y="98" width="38" height="22" rx="4" fill="#FF5722"/>
+  <text x="83" y="113" fill="#0B0B0C" font-family="Consolas, Menlo, monospace" font-size="11.5" font-weight="800" text-anchor="middle">01</text>
+  <text x="114" y="113" fill="#A1A1AA" font-family="Consolas, Menlo, monospace" font-size="12" font-weight="600" letter-spacing="1.5">CO-FOUNDER &amp; LEAD SOFTWARE ENGINEER</text>
+
+  <!-- Big Swiss Headline -->
+  <text x="64" y="198" fill="#FAFAFA" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="68" font-weight="800" letter-spacing="-2.5">SACHITH</text>
+  <text x="64" y="264" fill="#FF5722" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="68" font-weight="800" letter-spacing="-2.5">GUNARATHNA</text>
+
+  <!-- Sub-description -->
+  <text x="64" y="308" fill="#A1A1AA" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16.5">Engineering scalable Full-Stack Web, Mobile, Commercial POS &amp; Smart IoT Systems.</text>
+
+  <!-- Bottom Meta Chips -->
+  <rect x="64" y="334" width="166" height="34" rx="6" fill="#1A1A1E" stroke="#27272A"/>
+  <text x="147" y="355" fill="#FAFAFA" font-family="Consolas, Menlo, monospace" font-size="12" font-weight="600" text-anchor="middle">NEXCENTAURI.COM</text>
+
+  <rect x="242" y="334" width="186" height="34" rx="6" fill="#1A1A1E" stroke="#27272A"/>
+  <text x="335" y="355" fill="#FAFAFA" font-family="Consolas, Menlo, monospace" font-size="12" font-weight="600" text-anchor="middle">BSc (Hons) SE • BCU</text>
+
+  <rect x="440" y="334" width="140" height="34" rx="6" fill="#1A1A1E" stroke="#27272A"/>
+  <text x="510" y="355" fill="#A1A1AA" font-family="Consolas, Menlo, monospace" font-size="12" font-weight="600" text-anchor="middle">SRI LANKA 🇱🇰</text>
+
+  <!-- Right Column Top Card: Active Focus -->
+  <rect x="796" y="68" width="372" height="168" rx="14" fill="#141416" stroke="#27272A" stroke-width="1.2"/>
+  <text x="822" y="102" fill="#FF5722" font-family="Consolas, Menlo, monospace" font-size="11.5" font-weight="700" letter-spacing="1.2">// CURRENTLY BUILDING</text>
+  <line x1="822" y1="116" x2="1142" y2="116" stroke="#27272A"/>
+  <text x="822" y="146" fill="#FAFAFA" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="700">Nexcentauri Digital Solutions</text>
+  <text x="822" y="170" fill="#A1A1AA" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5">Next.js • Spring Boot • Cloud VPN Infra</text>
+  <text x="822" y="206" fill="#FAFAFA" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="700">Commercial Desktop POS &amp; IoT</text>
+  <text x="822" y="224" fill="#A1A1AA" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13">Java • Hibernate • ESP32 / ESP8266</text>
+
+  <!-- Right Column Bottom Split Cards -->
+  <rect x="796" y="252" width="178" height="148" rx="14" fill="#FF5722"/>
+  <text x="818" y="284" fill="#0B0B0C" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="800" letter-spacing="1">CORE STACK</text>
+  <text x="818" y="332" fill="#0B0B0C" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="36" font-weight="900" letter-spacing="-1">JAVA</text>
+  <text x="818" y="358" fill="#0B0B0C" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700">+ TypeScript</text>
+  <text x="818" y="378" fill="#0B0B0C" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700">+ Flutter / Dart</text>
+
+  <rect x="990" y="252" width="178" height="148" rx="14" fill="#141416" stroke="#27272A" stroke-width="1.2"/>
+  <text x="1012" y="284" fill="#A1A1AA" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="700" letter-spacing="1">SPECIALTY</text>
+  <text x="1012" y="328" fill="#FAFAFA" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22" font-weight="800">Full-Stack</text>
+  <text x="1012" y="354" fill="#FAFAFA" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22" font-weight="800">&amp; Embedded</text>
+  <text x="1012" y="382" fill="#FF5722" font-family="Consolas, Menlo, monospace" font-size="12" font-weight="700">HARDWARE + SW</text>
+</svg>
