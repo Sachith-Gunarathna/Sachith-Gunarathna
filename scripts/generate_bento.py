@@ -41,18 +41,21 @@ ACCENTS = {
         "soft": "rgba(255, 94, 26, 0.14)",
         "border": "rgba(255, 94, 26, 0.42)",
         "heat": ["#18181D", "#4A1E0C", "#8C330E", "#CC4912", "#FF5E1A"],
+        "snake": ["#6EE7B7", "#34D399", "#22C55E", "#10B981", "#059669", "#047857"],
     },
     "lime": {
         "accent": "#A3E635",
         "soft": "rgba(163, 230, 53, 0.14)",
         "border": "rgba(163, 230, 53, 0.42)",
         "heat": ["#18181D", "#23360C", "#436B12", "#73B31F", "#A3E635"],
+        "snake": ["#7DD3FC", "#38BDF8", "#0EA5E9", "#0284C7", "#0369A1", "#075985"],
     },
     "ice": {
         "accent": "#E4E4E7",
         "soft": "rgba(228, 228, 231, 0.12)",
         "border": "rgba(228, 228, 231, 0.42)",
         "heat": ["#18181D", "#32323A", "#5E5E6B", "#A1A1AA", "#E4E4E7"],
+        "snake": ["#FF8A50", "#FF5E1A", "#E64A0E", "#CC4912", "#A33A0E", "#7A2B0B"],
     },
 }
 
@@ -391,6 +394,221 @@ def build_sparkline_paths(values: list[int], width: float = 186.0, height: float
     return fill_d, line_d
 
 
+
+# ==============================================================================
+# CONTRIBUTION MATRIX SNAKE ENGINE (PURE CSS KEYFRAMES — GITHUB SAFE)
+# ==============================================================================
+def build_contribution_snake(
+    cells: list[dict[str, Any]],
+    heat: list[str],
+    snake_colors: list[str],
+    step_x: float = 12.95,
+    step_y: float = 13.0,
+    cell_sz: float = 9.5,
+    duration_s: float = 24.0,
+) -> tuple[str, str, str]:
+    """
+    Computes an orthogonal, zero-U-turn commit-eating snake path across the 52x7
+    contribution matrix and returns:
+      (snake_css, cells_svg, snake_segments_svg)
+    All coordinates are local to the heatmap <g transform="translate(hm_x, hm_y)">.
+    """
+    cols = 52
+    rows = 7
+
+    # Map active cells per column
+    col_active: dict[int, list[int]] = {}
+    for idx, cell in enumerate(cells[: cols * rows]):
+        if cell["level"] > 0:
+            c = idx // rows
+            r = idx % rows
+            col_active.setdefault(c, []).append(r)
+
+    active_cols = sorted(col_active.keys())
+
+    # Helper to append orthogonal 1-cell steps without duplicating current cell
+    path: list[tuple[int, int]] = []
+
+    def move_to(tc: int, tr: int) -> None:
+        cc, cr = path[-1]
+        while cc != tc:
+            cc += 1 if tc > cc else -1
+            path.append((cc, cr))
+        while cr != tr:
+            cr += 1 if tr > cr else -1
+            path.append((cc, cr))
+
+    def move_vert_then_horiz(tc: int, tr: int) -> None:
+        cc, cr = path[-1]
+        while cr != tr:
+            cr += 1 if tr > cr else -1
+            path.append((cc, cr))
+        while cc != tc:
+            cc += 1 if tc > cc else -1
+            path.append((cc, cr))
+
+    if not active_cols:
+        # Fallback clean serpentine sweep if user has 0 public contributions
+        path.append((-2, 0))
+        for c in range(cols):
+            if c % 2 == 0:
+                move_to(c, 0)
+                move_to(c, rows - 1)
+            else:
+                move_to(c, rows - 1)
+                move_to(c, 0)
+        move_to(cols + 1, path[-1][1])
+    else:
+        first_c = active_cols[0]
+        first_min = min(col_active[first_c])
+        first_max = max(col_active[first_c])
+        # Start off-screen left at first_min, glide into first_c and sweep down to first_max
+        path.append((-2, first_min))
+        move_to(first_c, first_min)
+        if first_max != first_min:
+            move_to(first_c, first_max)
+        last_dy = 1 if first_max >= first_min else -1
+
+        for c in active_cols[1:]:
+            rs = col_active[c]
+            min_r, max_r = min(rs), max(rs)
+            cur_c, cur_r = path[-1]
+
+            if cur_r <= min_r:
+                # Enter horizontally, sweep down to max_r
+                move_to(c, max_r)
+                last_dy = 1
+            elif cur_r >= max_r:
+                # Enter horizontally, sweep up to min_r
+                move_to(c, min_r)
+                last_dy = -1
+            else:
+                # cur_r is strictly between min_r and max_r
+                if c - cur_c >= 2:
+                    # Step into intermediate empty column first, then align to closer extreme
+                    mid_c = c - 1
+                    move_to(mid_c, cur_r)
+                    if (cur_r - min_r) <= (max_r - cur_r):
+                        move_vert_then_horiz(c, min_r)
+                        move_to(c, max_r)
+                        last_dy = 1
+                    else:
+                        move_vert_then_horiz(c, max_r)
+                        move_to(c, min_r)
+                        last_dy = -1
+                else:
+                    # Adjacent column: continue in last_dy inside cur_c to avoid 180-deg U-turn
+                    if last_dy >= 0:
+                        move_vert_then_horiz(c, max_r)
+                        move_to(c, min_r)
+                        last_dy = -1
+                    else:
+                        move_vert_then_horiz(c, min_r)
+                        move_to(c, max_r)
+                        last_dy = 1
+
+        # Exit smoothly off-screen right
+        move_to(cols + 1, path[-1][1])
+
+    total_steps = max(len(path) - 1, 1)
+    active_pct = 92.0  # 0%..92% active traversal, 92%..100% off-screen reset & respawn
+    step_dt = (duration_s * (active_pct / 100.0)) / total_steps
+
+    # Record first step index when snake head reaches each grid cell
+    eaten_at: dict[tuple[int, int], int] = {}
+    for step_idx, pos in enumerate(path):
+        if 0 <= pos[0] < cols and 0 <= pos[1] < rows and pos not in eaten_at:
+            eaten_at[pos] = step_idx
+
+    # Compress straight runs to corners only for silky-smooth compact CSS keyframes
+    corner_indices = [0]
+    for i in range(1, len(path) - 1):
+        dx1 = path[i][0] - path[i - 1][0]
+        dy1 = path[i][1] - path[i - 1][1]
+        dx2 = path[i + 1][0] - path[i][0]
+        dy2 = path[i + 1][1] - path[i][1]
+        if (dx1, dy1) != (dx2, dy2):
+            corner_indices.append(i)
+    corner_indices.append(len(path) - 1)
+
+    kf_stops = []
+    for idx in corner_indices:
+        pct = (idx / total_steps) * active_pct
+        tx = round(path[idx][0] * step_x, 2)
+        ty = round(path[idx][1] * step_y, 2)
+        kf_stops.append(f"{pct:.3f}%{{transform:translate({tx}px,{ty}px)}}")
+    end_tx = round(path[-1][0] * step_x, 2)
+    end_ty = round(path[-1][1] * step_y, 2)
+    kf_stops.append(f"100%{{transform:translate({end_tx}px,{end_ty}px)}}")
+
+    css_lines = [
+        f"@keyframes snkMove{{{''.join(kf_stops)}}}",
+        f".snk{{animation:snkMove {duration_s:.2f}s linear infinite both;will-change:transform}}",
+    ]
+
+    # Build contribution cells + per-cell eat/respawn CSS animations
+    cell_rects = []
+    empty_fill = heat[0]
+    for idx, cell in enumerate(cells[: cols * rows]):
+        col = idx // rows
+        row = idx % rows
+        cx = round(col * step_x, 2)
+        cy = round(row * step_y, 2)
+        lvl = min(max(cell["level"], 0), 4)
+        fill = heat[lvl]
+
+        if lvl > 0 and (col, row) in eaten_at:
+            eat_step = eaten_at[(col, row)]
+            p_eat = (eat_step / total_steps) * active_pct
+            p_pre = max(0.0, p_eat - 0.15)
+            p_post = min(94.5, p_eat + 0.15)
+            cls = f"c{idx}"
+            css_lines.append(
+                f"@keyframes k{idx}{{0%,{p_pre:.2f}%{{fill:{fill}}}{p_post:.2f}%,95.2%{{fill:{empty_fill}}}98.8%,100%{{fill:{fill}}}}}"
+                f".{cls}{{animation:k{idx} {duration_s:.2f}s linear infinite}}"
+            )
+            cell_rects.append(
+                f'<rect class="{cls}" x="{cx}" y="{cy}" width="{cell_sz}" height="{cell_sz}" rx="2" fill="{fill}"/>'
+            )
+        else:
+            cell_rects.append(
+                f'<rect x="{cx}" y="{cy}" width="{cell_sz}" height="{cell_sz}" rx="2" fill="{fill}"/>'
+            )
+
+    # Build 6 tapering snake segments (rendered tail-to-head so head sits on top)
+    seg_specs = [
+        # (segment_index_from_head, size, rx, opacity, filter_attr)
+        (5, 6.2, 2.0, 0.58, ""),
+        (4, 7.0, 2.2, 0.72, ""),
+        (3, 7.8, 2.4, 0.84, ""),
+        (2, 8.5, 2.6, 0.92, ""),
+        (1, 9.0, 2.8, 0.97, ""),
+        (0, 9.5, 3.0, 1.00, ' filter="url(#greenGlow)"'),
+    ]
+
+    snake_elems = []
+    for seg_i, sz, rx, op, filt in seg_specs:
+        offset = round((cell_sz - sz) / 2.0, 2)
+        delay = round(seg_i * step_dt, 4)
+        color = snake_colors[min(seg_i, len(snake_colors) - 1)]
+        if seg_i == 0:
+            # Head with crisp inner highlight core
+            snake_elems.append(
+                f'<g class="snk" style="animation-delay:{delay}s">'
+                f'<rect x="{offset}" y="{offset}" width="{sz}" height="{sz}" rx="{rx}" fill="{color}"{filt}/>'
+                f'<rect x="3.1" y="3.1" width="3.3" height="3.3" rx="1" fill="#FAFAFA" opacity="0.85"/>'
+                f'</g>'
+            )
+        else:
+            snake_elems.append(
+                f'<rect class="snk" style="animation-delay:{delay}s" '
+                f'x="{offset}" y="{offset}" width="{sz}" height="{sz}" rx="{rx}" '
+                f'fill="{color}" opacity="{op}"/>'
+            )
+
+    return "\n      ".join(css_lines), "\n      ".join(cell_rects), "\n      ".join(snake_elems)
+
+
 # ==============================================================================
 # MAIN BENTO OS SVG BUILDER
 # ==============================================================================
@@ -398,6 +616,7 @@ def build_bento_os_svg(data: dict[str, Any], accent_key: str) -> str:
     theme = ACCENTS.get(accent_key, ACCENTS["orange"])
     accent = theme["accent"]
     heat = theme["heat"]
+    snake_colors = theme["snake"]
     portrait_uri = load_portrait_data_uri()
 
     # Master Layout Constants (Exact 1000px Stage from HTML)
@@ -514,22 +733,21 @@ def build_bento_os_svg(data: dict[str, Any], accent_key: str) -> str:
     div2_x = col3_x - 12
     pills_y = R3_Y + 94
 
-    # --- 52-Week Contribution Heatmap ---
+    # --- 52-Week Contribution Heatmap + Animated Snake ---
     hm_x = PAD + 22
     hm_y = R4_Y + 78
     cell_sz = 9.5
     step_x = 12.95
     step_y = 13.0
-    heatmap_rects = []
-    for i, cell in enumerate(data["heatmap"][: 52 * 7]):
-        col = i // 7
-        row = i % 7
-        cx = hm_x + col * step_x
-        cy = hm_y + row * step_y
-        fill = heat[min(max(cell["level"], 0), 4)]
-        heatmap_rects.append(
-            f'<rect x="{cx:.1f}" y="{cy:.1f}" width="{cell_sz}" height="{cell_sz}" rx="2" fill="{fill}"/>'
-        )
+    snake_css, heatmap_cells_svg, snake_segs_svg = build_contribution_snake(
+        data["heatmap"],
+        heat=heat,
+        snake_colors=snake_colors,
+        step_x=step_x,
+        step_y=step_y,
+        cell_sz=cell_sz,
+        duration_s=24.0,
+    )
 
     month_texts = []
     m_step = (52 * step_x) / 12.0
@@ -545,9 +763,9 @@ def build_bento_os_svg(data: dict[str, Any], accent_key: str) -> str:
     spark_fill_d, spark_line_d = build_sparkline_paths(data["sparkline"], width=186.0, height=34.0)
 
     status_caption = (
-        "LIVE TELEMETRY • AUTO-SYNCED VIA GITHUB ACTIONS"
+        "SNAKE PROTOCOL ACTIVE • LIVE GITHUB TELEMETRY"
         if data["live"]
-        else "52-WEEK COMMIT DENSITY • UTC+5:30"
+        else "SNAKE PROTOCOL ACTIVE • 52-WEEK MATRIX"
     )
 
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" fill="none">
@@ -560,6 +778,7 @@ def build_bento_os_svg(data: dict[str, Any], accent_key: str) -> str:
       .signal-dot {{
         animation: pulseSignal 2s ease-in-out infinite;
       }}
+      {snake_css}
     </style>
 
     <pattern id="portraitGrid" width="24" height="24" patternUnits="userSpaceOnUse">
@@ -601,6 +820,9 @@ def build_bento_os_svg(data: dict[str, Any], accent_key: str) -> str:
     </clipPath>
     <clipPath id="silClip">
       <rect x="0" y="0" width="260" height="270"/>
+    </clipPath>
+    <clipPath id="heatmapClip">
+      <rect x="-4" y="-4" width="{52 * step_x + 4:.1f}" height="{7 * step_y + 4:.1f}" rx="4"/>
     </clipPath>
   </defs>
 
@@ -750,7 +972,10 @@ def build_bento_os_svg(data: dict[str, Any], accent_key: str) -> str:
     <text x="{PAD + COL_9 - 22}" y="{R4_Y + 32}" text-anchor="end" fill="#8E8E93" font-family="{FONT_MONO}" font-size="10" letter-spacing="0.8">52 WEEKS • UTC+5:30</text>
 
     {''.join(month_texts)}
-    {''.join(heatmap_rects)}
+    <g transform="translate({hm_x}, {hm_y})" clip-path="url(#heatmapClip)">
+      {heatmap_cells_svg}
+      {snake_segs_svg}
+    </g>
 
     <text x="{PAD + 22}" y="{R4_Y + R4_H - 24}" fill="#8E8E93" font-family="{FONT_MONO}" font-size="10">{status_caption}</text>
     <g transform="translate({PAD + COL_9 - 160}, {R4_Y + R4_H - 34})">
