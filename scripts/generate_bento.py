@@ -853,7 +853,7 @@ def build_footer_svg() -> str:
     return (
         f'<svg xmlns="http://www.w3.org/2000/svg" width="600" height="24" viewBox="0 0 600 24" fill="none">\n'
         f'  <text x="300" y="15" text-anchor="middle" fill="#8E8E93" font-family="{FONT_MONO}" font-size="10" letter-spacing="1.8">'
-        f'SACHITH GUNARATHNA © {year} — ENGINEERED IN SRI LANKA</text>\n'
+        f'SACHITH GUNARATHNA © {year}</text>\n'
         f'</svg>\n'
     )
 

@@ -31,7 +31,7 @@
 
 <!-- MINIMALIST FOOTER -->
 <p align="center">
-  <img src="./assets/footer.svg" alt="Sachith Gunarathna © 2026 — Engineered in Sri Lanka" />
+  <img src="./assets/footer.svg" alt="Sachith Gunarathna © 2026" />
 </p>
 
 </div>
