@@ -139,7 +139,8 @@
       @keyframes k344{0%,87.54%{fill:#4A1E0C}87.84%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c344{animation:k344 24.00s linear infinite}
       @keyframes k346{0%,88.33%{fill:#8C330E}88.63%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c346{animation:k346 24.00s linear infinite}
       @keyframes k347{0%,88.72%{fill:#4A1E0C}89.02%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c347{animation:k347 24.00s linear infinite}
-      @keyframes k357{0%,91.07%{fill:#FF5E1A}91.37%,95.2%{fill:#18181D}98.8%,100%{fill:#FF5E1A}}.c357{animation:k357 24.00s linear infinite}
+      @keyframes k357{0%,91.07%{fill:#CC4912}91.37%,95.2%{fill:#18181D}98.8%,100%{fill:#CC4912}}.c357{animation:k357 24.00s linear infinite}
+      @keyframes k358{0%,90.68%{fill:#4A1E0C}90.98%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c358{animation:k358 24.00s linear infinite}
     </style>
 
     <pattern id="portraitGrid" width="24" height="24" patternUnits="userSpaceOnUse">
@@ -278,7 +279,7 @@
     <rect x="221" y="420" width="171" height="74" rx="12" fill="#09090B" stroke="#222228" stroke-width="1"/>
     <text x="235" y="441" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10" letter-spacing="0.8">CONTRIBUTIONS</text>
     <circle cx="378" cy="437" r="3" fill="#FF5E1A"/>
-    <text x="235" y="479" fill="#FF5E1A" font-family="'Space Grotesk', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="700">888</text>
+    <text x="235" y="479" fill="#FF5E1A" font-family="'Space Grotesk', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="700">892</text>
 
     <rect x="40" y="504" width="171" height="74" rx="12" fill="#09090B" stroke="#222228" stroke-width="1"/>
     <text x="54" y="525" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10" letter-spacing="0.8">FOLLOWERS</text>
@@ -843,8 +844,8 @@
       <rect x="647.5" y="52.0" width="9.5" height="9.5" rx="2" fill="#18181D"/>
       <rect x="647.5" y="65.0" width="9.5" height="9.5" rx="2" fill="#18181D"/>
       <rect x="647.5" y="78.0" width="9.5" height="9.5" rx="2" fill="#18181D"/>
-      <rect class="c357" x="660.45" y="0.0" width="9.5" height="9.5" rx="2" fill="#FF5E1A"/>
-      <rect x="660.45" y="13.0" width="9.5" height="9.5" rx="2" fill="#18181D"/>
+      <rect class="c357" x="660.45" y="0.0" width="9.5" height="9.5" rx="2" fill="#CC4912"/>
+      <rect class="c358" x="660.45" y="13.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/>
       <rect x="660.45" y="26.0" width="9.5" height="9.5" rx="2" fill="#18181D"/>
       <rect x="660.45" y="39.0" width="9.5" height="9.5" rx="2" fill="#18181D"/>
       <rect x="660.45" y="52.0" width="9.5" height="9.5" rx="2" fill="#18181D"/>
@@ -876,7 +877,7 @@
 
     <rect x="770" y="966" width="190" height="62" rx="12" fill="#09090B" stroke="#222228" stroke-width="1"/>
     <text x="782" y="984" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="9.5" letter-spacing="0.8">CURRENT STREAK</text>
-    <text x="782" y="1016" fill="#FF5E1A" font-family="'Space Grotesk', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="700">1 <tspan fill="#8E8E93" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12" font-weight="400">days</tspan></text>
+    <text x="782" y="1016" fill="#FF5E1A" font-family="'Space Grotesk', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="700">2 <tspan fill="#8E8E93" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12" font-weight="400">days</tspan></text>
 
     <rect x="770" y="1038" width="190" height="62" rx="12" fill="#09090B" stroke="#222228" stroke-width="1"/>
     <text x="782" y="1056" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="9.5" letter-spacing="0.8">BEST STREAK</text>
@@ -884,11 +885,11 @@
 
     <line x1="770" y1="1112" x2="960" y2="1112" stroke="#222228" stroke-width="1"/>
     <text x="772" y="1128" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10">30D PULSE</text>
-    <text x="958" y="1128" text-anchor="end" fill="#FF5E1A" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10" font-weight="600">+144%</text>
+    <text x="958" y="1128" text-anchor="end" fill="#FF5E1A" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10" font-weight="600">+159%</text>
 
     <g transform="translate(772, 1136)">
-      <path d="M0.0,28.5 L12.4,30.0 L24.8,30.0 L37.2,30.0 L49.6,30.0 L62.0,11.6 L74.4,4.0 L86.8,25.4 L99.2,17.8 L111.6,16.2 L124.0,28.5 L136.4,30.0 L148.8,30.0 L161.2,30.0 L173.6,30.0 L186.0,5.5 L186.0,34.0 L0,34.0 Z" fill="url(#sparkFill)"/>
-      <path d="M0.0,28.5 L12.4,30.0 L24.8,30.0 L37.2,30.0 L49.6,30.0 L62.0,11.6 L74.4,4.0 L86.8,25.4 L99.2,17.8 L111.6,16.2 L124.0,28.5 L136.4,30.0 L148.8,30.0 L161.2,30.0 L173.6,30.0 L186.0,5.5" fill="none" stroke="#FF5E1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M0.0,28.7 L12.4,30.0 L24.8,30.0 L37.2,30.0 L49.6,30.0 L62.0,14.4 L74.4,7.9 L86.8,26.1 L99.2,19.6 L111.6,18.3 L124.0,28.7 L136.4,30.0 L148.8,30.0 L161.2,30.0 L173.6,30.0 L186.0,4.0 L186.0,34.0 L0,34.0 Z" fill="url(#sparkFill)"/>
+      <path d="M0.0,28.7 L12.4,30.0 L24.8,30.0 L37.2,30.0 L49.6,30.0 L62.0,14.4 L74.4,7.9 L86.8,26.1 L99.2,19.6 L111.6,18.3 L124.0,28.7 L136.4,30.0 L148.8,30.0 L161.2,30.0 L173.6,30.0 L186.0,4.0" fill="none" stroke="#FF5E1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </g>
   </g>
 </svg>
