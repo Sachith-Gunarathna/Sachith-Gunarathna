@@ -888,8 +888,8 @@
     <text x="958" y="1128" text-anchor="end" fill="#FF5E1A" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10" font-weight="600">+159%</text>
 
     <g transform="translate(772, 1136)">
-      <path d="M0.0,28.7 L12.4,30.0 L24.8,30.0 L37.2,30.0 L49.6,30.0 L62.0,14.4 L74.4,7.9 L86.8,26.1 L99.2,19.6 L111.6,18.3 L124.0,28.7 L136.4,30.0 L148.8,30.0 L161.2,30.0 L173.6,30.0 L186.0,4.0 L186.0,34.0 L0,34.0 Z" fill="url(#sparkFill)"/>
-      <path d="M0.0,28.7 L12.4,30.0 L24.8,30.0 L37.2,30.0 L49.6,30.0 L62.0,14.4 L74.4,7.9 L86.8,26.1 L99.2,19.6 L111.6,18.3 L124.0,28.7 L136.4,30.0 L148.8,30.0 L161.2,30.0 L173.6,30.0 L186.0,4.0" fill="none" stroke="#FF5E1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M0.0,28.7 L12.4,30.0 L24.8,30.0 L37.2,30.0 L49.6,30.0 L62.0,4.0 L74.4,14.4 L86.8,20.9 L99.2,28.7 L111.6,17.0 L124.0,30.0 L136.4,30.0 L148.8,30.0 L161.2,30.0 L173.6,10.5 L186.0,23.5 L186.0,34.0 L0,34.0 Z" fill="url(#sparkFill)"/>
+      <path d="M0.0,28.7 L12.4,30.0 L24.8,30.0 L37.2,30.0 L49.6,30.0 L62.0,4.0 L74.4,14.4 L86.8,20.9 L99.2,28.7 L111.6,17.0 L124.0,30.0 L136.4,30.0 L148.8,30.0 L161.2,30.0 L173.6,10.5 L186.0,23.5" fill="none" stroke="#FF5E1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </g>
   </g>
 </svg>
