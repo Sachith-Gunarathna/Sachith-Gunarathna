@@ -886,11 +886,11 @@
 
     <line x1="770" y1="1112" x2="960" y2="1112" stroke="#222228" stroke-width="1"/>
     <text x="772" y="1128" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10">30D PULSE</text>
-    <text x="958" y="1128" text-anchor="end" fill="#FF5E1A" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10" font-weight="600">+213%</text>
+    <text x="958" y="1128" text-anchor="end" fill="#FF5E1A" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10" font-weight="600">+243%</text>
 
     <g transform="translate(772, 1136)">
-      <path d="M0.0,30.0 L12.4,30.0 L24.8,30.0 L37.2,30.0 L49.6,14.4 L62.0,7.9 L74.4,26.1 L86.8,19.6 L99.2,18.3 L111.6,28.7 L124.0,30.0 L136.4,30.0 L148.8,30.0 L161.2,30.0 L173.6,4.0 L186.0,27.4 L186.0,34.0 L0,34.0 Z" fill="url(#sparkFill)"/>
-      <path d="M0.0,30.0 L12.4,30.0 L24.8,30.0 L37.2,30.0 L49.6,14.4 L62.0,7.9 L74.4,26.1 L86.8,19.6 L99.2,18.3 L111.6,28.7 L124.0,30.0 L136.4,30.0 L148.8,30.0 L161.2,30.0 L173.6,4.0 L186.0,27.4" fill="none" stroke="#FF5E1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M0.0,30.0 L12.4,30.0 L24.8,30.0 L37.2,30.0 L49.6,4.0 L62.0,14.4 L74.4,20.9 L86.8,28.7 L99.2,17.0 L111.6,30.0 L124.0,30.0 L136.4,30.0 L148.8,30.0 L161.2,10.5 L173.6,23.5 L186.0,27.4 L186.0,34.0 L0,34.0 Z" fill="url(#sparkFill)"/>
+      <path d="M0.0,30.0 L12.4,30.0 L24.8,30.0 L37.2,30.0 L49.6,4.0 L62.0,14.4 L74.4,20.9 L86.8,28.7 L99.2,17.0 L111.6,30.0 L124.0,30.0 L136.4,30.0 L148.8,30.0 L161.2,10.5 L173.6,23.5 L186.0,27.4" fill="none" stroke="#FF5E1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </g>
   </g>
 </svg>
