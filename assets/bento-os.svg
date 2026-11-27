@@ -8,140 +8,141 @@
       .signal-dot {
         animation: pulseSignal 2s ease-in-out infinite;
       }
-      @keyframes snkMove{0.000%{transform:translate(-25.9px,78.0px)}3.132%{transform:translate(77.7px,78.0px)}5.481%{transform:translate(77.7px,0.0px)}6.264%{transform:translate(103.6px,0.0px)}8.613%{transform:translate(103.6px,78.0px)}9.004%{transform:translate(116.55px,78.0px)}11.353%{transform:translate(116.55px,0.0px)}11.745%{transform:translate(129.5px,0.0px)}14.094%{transform:translate(129.5px,78.0px)}14.485%{transform:translate(142.45px,78.0px)}16.834%{transform:translate(142.45px,0.0px)}17.226%{transform:translate(155.4px,0.0px)}18.400%{transform:translate(155.4px,39.0px)}19.183%{transform:translate(181.3px,39.0px)}20.357%{transform:translate(181.3px,78.0px)}20.749%{transform:translate(194.25px,78.0px)}21.532%{transform:translate(194.25px,52.0px)}21.923%{transform:translate(207.2px,52.0px)}22.315%{transform:translate(207.2px,39.0px)}22.706%{transform:translate(220.15px,39.0px)}23.881%{transform:translate(220.15px,0.0px)}24.272%{transform:translate(233.1px,0.0px)}26.621%{transform:translate(233.1px,78.0px)}27.013%{transform:translate(246.05px,78.0px)}29.362%{transform:translate(246.05px,0.0px)}29.753%{transform:translate(259.0px,0.0px)}31.711%{transform:translate(259.0px,65.0px)}32.102%{transform:translate(271.95px,65.0px)}33.668%{transform:translate(271.95px,13.0px)}34.060%{transform:translate(284.9px,13.0px)}36.017%{transform:translate(284.9px,78.0px)}36.409%{transform:translate(297.85px,78.0px)}38.757%{transform:translate(297.85px,0.0px)}39.149%{transform:translate(310.8px,0.0px)}41.498%{transform:translate(310.8px,78.0px)}41.889%{transform:translate(323.75px,78.0px)}43.847%{transform:translate(323.75px,13.0px)}44.238%{transform:translate(336.7px,13.0px)}45.804%{transform:translate(336.7px,65.0px)}46.196%{transform:translate(349.65px,65.0px)}46.587%{transform:translate(349.65px,78.0px)}46.979%{transform:translate(362.6px,78.0px)}49.328%{transform:translate(362.6px,0.0px)}49.719%{transform:translate(375.55px,0.0px)}52.068%{transform:translate(375.55px,78.0px)}52.460%{transform:translate(388.5px,78.0px)}54.809%{transform:translate(388.5px,0.0px)}55.591%{transform:translate(414.4px,0.0px)}57.940%{transform:translate(414.4px,78.0px)}58.332%{transform:translate(427.35px,78.0px)}59.898%{transform:translate(427.35px,26.0px)}60.681%{transform:translate(453.25px,26.0px)}61.464%{transform:translate(453.25px,52.0px)}62.247%{transform:translate(479.15px,52.0px)}63.813%{transform:translate(479.15px,0.0px)}64.204%{transform:translate(492.1px,0.0px)}66.553%{transform:translate(492.1px,78.0px)}66.945%{transform:translate(505.05px,78.0px)}69.294%{transform:translate(505.05px,0.0px)}69.685%{transform:translate(518.0px,0.0px)}72.034%{transform:translate(518.0px,78.0px)}72.426%{transform:translate(530.95px,78.0px)}74.774%{transform:translate(530.95px,0.0px)}75.166%{transform:translate(543.9px,0.0px)}77.515%{transform:translate(543.9px,78.0px)}77.906%{transform:translate(556.85px,78.0px)}80.255%{transform:translate(556.85px,0.0px)}80.647%{transform:translate(569.8px,0.0px)}82.604%{transform:translate(569.8px,65.0px)}83.387%{transform:translate(595.7px,65.0px)}83.779%{transform:translate(595.7px,78.0px)}84.562%{transform:translate(621.6px,78.0px)}86.911%{transform:translate(621.6px,0.0px)}87.302%{transform:translate(634.55px,0.0px)}88.868%{transform:translate(634.55px,52.0px)}89.651%{transform:translate(660.45px,52.0px)}91.217%{transform:translate(660.45px,0.0px)}92.000%{transform:translate(686.35px,0.0px)}100%{transform:translate(686.35px,0.0px)}}
+      @keyframes snkMove{0.000%{transform:translate(-25.9px,78.0px)}3.105%{transform:translate(77.7px,78.0px)}5.435%{transform:translate(77.7px,0.0px)}6.211%{transform:translate(103.6px,0.0px)}8.540%{transform:translate(103.6px,78.0px)}8.928%{transform:translate(116.55px,78.0px)}11.257%{transform:translate(116.55px,0.0px)}11.646%{transform:translate(129.5px,0.0px)}13.975%{transform:translate(129.5px,78.0px)}14.363%{transform:translate(142.45px,78.0px)}16.692%{transform:translate(142.45px,0.0px)}17.080%{transform:translate(155.4px,0.0px)}18.245%{transform:translate(155.4px,39.0px)}19.021%{transform:translate(181.3px,39.0px)}20.186%{transform:translate(181.3px,78.0px)}20.574%{transform:translate(194.25px,78.0px)}21.350%{transform:translate(194.25px,52.0px)}21.738%{transform:translate(207.2px,52.0px)}22.127%{transform:translate(207.2px,39.0px)}22.515%{transform:translate(220.15px,39.0px)}23.679%{transform:translate(220.15px,0.0px)}24.068%{transform:translate(233.1px,0.0px)}26.397%{transform:translate(233.1px,78.0px)}26.785%{transform:translate(246.05px,78.0px)}29.114%{transform:translate(246.05px,0.0px)}29.502%{transform:translate(259.0px,0.0px)}31.443%{transform:translate(259.0px,65.0px)}31.831%{transform:translate(271.95px,65.0px)}33.384%{transform:translate(271.95px,13.0px)}33.772%{transform:translate(284.9px,13.0px)}35.713%{transform:translate(284.9px,78.0px)}36.101%{transform:translate(297.85px,78.0px)}38.430%{transform:translate(297.85px,0.0px)}38.819%{transform:translate(310.8px,0.0px)}41.148%{transform:translate(310.8px,78.0px)}41.536%{transform:translate(323.75px,78.0px)}43.477%{transform:translate(323.75px,13.0px)}43.865%{transform:translate(336.7px,13.0px)}45.418%{transform:translate(336.7px,65.0px)}45.806%{transform:translate(349.65px,65.0px)}46.194%{transform:translate(349.65px,78.0px)}46.582%{transform:translate(362.6px,78.0px)}48.911%{transform:translate(362.6px,0.0px)}49.300%{transform:translate(375.55px,0.0px)}51.629%{transform:translate(375.55px,78.0px)}52.017%{transform:translate(388.5px,78.0px)}54.346%{transform:translate(388.5px,0.0px)}55.122%{transform:translate(414.4px,0.0px)}57.451%{transform:translate(414.4px,78.0px)}57.840%{transform:translate(427.35px,78.0px)}59.392%{transform:translate(427.35px,26.0px)}60.169%{transform:translate(453.25px,26.0px)}60.945%{transform:translate(453.25px,52.0px)}61.722%{transform:translate(479.15px,52.0px)}63.274%{transform:translate(479.15px,0.0px)}63.662%{transform:translate(492.1px,0.0px)}65.992%{transform:translate(492.1px,78.0px)}66.380%{transform:translate(505.05px,78.0px)}68.709%{transform:translate(505.05px,0.0px)}69.097%{transform:translate(518.0px,0.0px)}71.426%{transform:translate(518.0px,78.0px)}71.814%{transform:translate(530.95px,78.0px)}74.143%{transform:translate(530.95px,0.0px)}74.532%{transform:translate(543.9px,0.0px)}76.861%{transform:translate(543.9px,78.0px)}77.249%{transform:translate(556.85px,78.0px)}79.578%{transform:translate(556.85px,0.0px)}79.966%{transform:translate(569.8px,0.0px)}81.907%{transform:translate(569.8px,65.0px)}82.684%{transform:translate(595.7px,65.0px)}83.072%{transform:translate(595.7px,78.0px)}83.848%{transform:translate(621.6px,78.0px)}86.177%{transform:translate(621.6px,0.0px)}86.565%{transform:translate(634.55px,0.0px)}88.118%{transform:translate(634.55px,52.0px)}88.506%{transform:translate(647.5px,52.0px)}88.895%{transform:translate(647.5px,65.0px)}89.283%{transform:translate(660.45px,65.0px)}91.224%{transform:translate(660.45px,0.0px)}92.000%{transform:translate(686.35px,0.0px)}100%{transform:translate(686.35px,0.0px)}}
       .snk{animation:snkMove 24.00s linear infinite both;will-change:transform}
-      @keyframes k41{0%,2.59%{fill:#4A1E0C}2.89%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c41{animation:k41 24.00s linear infinite}
-      @keyframes k42{0%,5.33%{fill:#4A1E0C}5.63%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c42{animation:k42 24.00s linear infinite}
-      @keyframes k57{0%,6.51%{fill:#4A1E0C}6.81%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c57{animation:k57 24.00s linear infinite}
-      @keyframes k59{0%,7.29%{fill:#4A1E0C}7.59%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c59{animation:k59 24.00s linear infinite}
-      @keyframes k61{0%,8.07%{fill:#FF5E1A}8.37%,95.2%{fill:#18181D}98.8%,100%{fill:#FF5E1A}}.c61{animation:k61 24.00s linear infinite}
-      @keyframes k62{0%,8.46%{fill:#4A1E0C}8.76%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c62{animation:k62 24.00s linear infinite}
-      @keyframes k64{0%,10.81%{fill:#4A1E0C}11.11%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c64{animation:k64 24.00s linear infinite}
-      @keyframes k65{0%,10.42%{fill:#CC4912}10.72%,95.2%{fill:#18181D}98.8%,100%{fill:#CC4912}}.c65{animation:k65 24.00s linear infinite}
-      @keyframes k66{0%,10.03%{fill:#8C330E}10.33%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c66{animation:k66 24.00s linear infinite}
-      @keyframes k67{0%,9.64%{fill:#FF5E1A}9.94%,95.2%{fill:#18181D}98.8%,100%{fill:#FF5E1A}}.c67{animation:k67 24.00s linear infinite}
-      @keyframes k68{0%,9.25%{fill:#4A1E0C}9.55%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c68{animation:k68 24.00s linear infinite}
-      @keyframes k69{0%,8.85%{fill:#8C330E}9.15%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c69{animation:k69 24.00s linear infinite}
-      @keyframes k70{0%,11.59%{fill:#CC4912}11.89%,95.2%{fill:#18181D}98.8%,100%{fill:#CC4912}}.c70{animation:k70 24.00s linear infinite}
-      @keyframes k71{0%,11.99%{fill:#CC4912}12.29%,95.2%{fill:#18181D}98.8%,100%{fill:#CC4912}}.c71{animation:k71 24.00s linear infinite}
-      @keyframes k72{0%,12.38%{fill:#4A1E0C}12.68%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c72{animation:k72 24.00s linear infinite}
-      @keyframes k73{0%,12.77%{fill:#FF5E1A}13.07%,95.2%{fill:#18181D}98.8%,100%{fill:#FF5E1A}}.c73{animation:k73 24.00s linear infinite}
-      @keyframes k74{0%,13.16%{fill:#CC4912}13.46%,95.2%{fill:#18181D}98.8%,100%{fill:#CC4912}}.c74{animation:k74 24.00s linear infinite}
-      @keyframes k75{0%,13.55%{fill:#8C330E}13.85%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c75{animation:k75 24.00s linear infinite}
-      @keyframes k76{0%,13.94%{fill:#4A1E0C}14.24%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c76{animation:k76 24.00s linear infinite}
-      @keyframes k78{0%,16.29%{fill:#4A1E0C}16.59%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c78{animation:k78 24.00s linear infinite}
-      @keyframes k82{0%,14.73%{fill:#8C330E}15.03%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c82{animation:k82 24.00s linear infinite}
-      @keyframes k84{0%,17.08%{fill:#8C330E}17.38%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c84{animation:k84 24.00s linear infinite}
-      @keyframes k87{0%,18.25%{fill:#4A1E0C}18.55%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c87{animation:k87 24.00s linear infinite}
-      @keyframes k103{0%,19.82%{fill:#8C330E}20.12%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c103{animation:k103 24.00s linear infinite}
-      @keyframes k109{0%,21.38%{fill:#FF5E1A}21.68%,95.2%{fill:#18181D}98.8%,100%{fill:#FF5E1A}}.c109{animation:k109 24.00s linear infinite}
-      @keyframes k110{0%,20.99%{fill:#4A1E0C}21.29%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c110{animation:k110 24.00s linear infinite}
-      @keyframes k111{0%,20.60%{fill:#8C330E}20.90%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c111{animation:k111 24.00s linear infinite}
-      @keyframes k115{0%,22.16%{fill:#FF5E1A}22.46%,95.2%{fill:#18181D}98.8%,100%{fill:#FF5E1A}}.c115{animation:k115 24.00s linear infinite}
-      @keyframes k121{0%,22.95%{fill:#FF5E1A}23.25%,95.2%{fill:#18181D}98.8%,100%{fill:#FF5E1A}}.c121{animation:k121 24.00s linear infinite}
-      @keyframes k126{0%,24.12%{fill:#8C330E}24.42%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c126{animation:k126 24.00s linear infinite}
-      @keyframes k127{0%,24.51%{fill:#4A1E0C}24.81%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c127{animation:k127 24.00s linear infinite}
-      @keyframes k128{0%,24.91%{fill:#FF5E1A}25.21%,95.2%{fill:#18181D}98.8%,100%{fill:#FF5E1A}}.c128{animation:k128 24.00s linear infinite}
-      @keyframes k129{0%,25.30%{fill:#4A1E0C}25.60%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c129{animation:k129 24.00s linear infinite}
-      @keyframes k130{0%,25.69%{fill:#4A1E0C}25.99%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c130{animation:k130 24.00s linear infinite}
-      @keyframes k132{0%,26.47%{fill:#4A1E0C}26.77%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c132{animation:k132 24.00s linear infinite}
-      @keyframes k133{0%,29.21%{fill:#4A1E0C}29.51%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c133{animation:k133 24.00s linear infinite}
-      @keyframes k136{0%,28.04%{fill:#4A1E0C}28.34%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c136{animation:k136 24.00s linear infinite}
-      @keyframes k137{0%,27.65%{fill:#4A1E0C}27.95%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c137{animation:k137 24.00s linear infinite}
-      @keyframes k138{0%,27.25%{fill:#4A1E0C}27.55%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c138{animation:k138 24.00s linear infinite}
-      @keyframes k139{0%,26.86%{fill:#4A1E0C}27.16%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c139{animation:k139 24.00s linear infinite}
-      @keyframes k140{0%,29.60%{fill:#4A1E0C}29.90%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c140{animation:k140 24.00s linear infinite}
-      @keyframes k142{0%,30.39%{fill:#4A1E0C}30.69%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c142{animation:k142 24.00s linear infinite}
-      @keyframes k143{0%,30.78%{fill:#4A1E0C}31.08%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c143{animation:k143 24.00s linear infinite}
-      @keyframes k144{0%,31.17%{fill:#4A1E0C}31.47%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c144{animation:k144 24.00s linear infinite}
-      @keyframes k145{0%,31.56%{fill:#4A1E0C}31.86%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c145{animation:k145 24.00s linear infinite}
-      @keyframes k148{0%,33.52%{fill:#4A1E0C}33.82%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c148{animation:k148 24.00s linear infinite}
-      @keyframes k149{0%,33.13%{fill:#4A1E0C}33.43%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c149{animation:k149 24.00s linear infinite}
-      @keyframes k150{0%,32.74%{fill:#4A1E0C}33.04%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c150{animation:k150 24.00s linear infinite}
-      @keyframes k151{0%,32.34%{fill:#8C330E}32.64%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c151{animation:k151 24.00s linear infinite}
-      @keyframes k155{0%,33.91%{fill:#8C330E}34.21%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c155{animation:k155 24.00s linear infinite}
-      @keyframes k156{0%,34.30%{fill:#4A1E0C}34.60%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c156{animation:k156 24.00s linear infinite}
-      @keyframes k159{0%,35.48%{fill:#CC4912}35.78%,95.2%{fill:#18181D}98.8%,100%{fill:#CC4912}}.c159{animation:k159 24.00s linear infinite}
-      @keyframes k160{0%,35.87%{fill:#4A1E0C}36.17%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c160{animation:k160 24.00s linear infinite}
-      @keyframes k161{0%,38.61%{fill:#4A1E0C}38.91%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c161{animation:k161 24.00s linear infinite}
-      @keyframes k165{0%,37.04%{fill:#4A1E0C}37.34%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c165{animation:k165 24.00s linear infinite}
-      @keyframes k166{0%,36.65%{fill:#4A1E0C}36.95%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c166{animation:k166 24.00s linear infinite}
-      @keyframes k167{0%,36.26%{fill:#CC4912}36.56%,95.2%{fill:#18181D}98.8%,100%{fill:#CC4912}}.c167{animation:k167 24.00s linear infinite}
-      @keyframes k169{0%,39.39%{fill:#FF5E1A}39.69%,95.2%{fill:#18181D}98.8%,100%{fill:#FF5E1A}}.c169{animation:k169 24.00s linear infinite}
-      @keyframes k170{0%,39.78%{fill:#8C330E}40.08%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c170{animation:k170 24.00s linear infinite}
-      @keyframes k171{0%,40.17%{fill:#FF5E1A}40.47%,95.2%{fill:#18181D}98.8%,100%{fill:#FF5E1A}}.c171{animation:k171 24.00s linear infinite}
-      @keyframes k172{0%,40.56%{fill:#4A1E0C}40.86%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c172{animation:k172 24.00s linear infinite}
-      @keyframes k173{0%,40.96%{fill:#4A1E0C}41.26%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c173{animation:k173 24.00s linear infinite}
-      @keyframes k174{0%,41.35%{fill:#4A1E0C}41.65%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c174{animation:k174 24.00s linear infinite}
-      @keyframes k176{0%,43.70%{fill:#8C330E}44.00%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c176{animation:k176 24.00s linear infinite}
-      @keyframes k178{0%,42.91%{fill:#8C330E}43.21%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c178{animation:k178 24.00s linear infinite}
-      @keyframes k179{0%,42.52%{fill:#CC4912}42.82%,95.2%{fill:#18181D}98.8%,100%{fill:#CC4912}}.c179{animation:k179 24.00s linear infinite}
-      @keyframes k183{0%,44.09%{fill:#8C330E}44.39%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c183{animation:k183 24.00s linear infinite}
-      @keyframes k184{0%,44.48%{fill:#4A1E0C}44.78%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c184{animation:k184 24.00s linear infinite}
-      @keyframes k187{0%,45.65%{fill:#4A1E0C}45.95%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c187{animation:k187 24.00s linear infinite}
-      @keyframes k197{0%,48.79%{fill:#4A1E0C}49.09%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c197{animation:k197 24.00s linear infinite}
-      @keyframes k202{0%,46.83%{fill:#CC4912}47.13%,95.2%{fill:#18181D}98.8%,100%{fill:#CC4912}}.c202{animation:k202 24.00s linear infinite}
-      @keyframes k203{0%,49.57%{fill:#8C330E}49.87%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c203{animation:k203 24.00s linear infinite}
-      @keyframes k207{0%,51.14%{fill:#4A1E0C}51.44%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c207{animation:k207 24.00s linear infinite}
-      @keyframes k208{0%,51.53%{fill:#4A1E0C}51.83%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c208{animation:k208 24.00s linear infinite}
-      @keyframes k209{0%,51.92%{fill:#4A1E0C}52.22%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c209{animation:k209 24.00s linear infinite}
-      @keyframes k210{0%,54.66%{fill:#4A1E0C}54.96%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c210{animation:k210 24.00s linear infinite}
-      @keyframes k211{0%,54.27%{fill:#4A1E0C}54.57%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c211{animation:k211 24.00s linear infinite}
-      @keyframes k212{0%,53.88%{fill:#4A1E0C}54.18%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c212{animation:k212 24.00s linear infinite}
-      @keyframes k213{0%,53.48%{fill:#4A1E0C}53.78%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c213{animation:k213 24.00s linear infinite}
-      @keyframes k214{0%,53.09%{fill:#CC4912}53.39%,95.2%{fill:#18181D}98.8%,100%{fill:#CC4912}}.c214{animation:k214 24.00s linear infinite}
-      @keyframes k215{0%,52.70%{fill:#4A1E0C}53.00%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c215{animation:k215 24.00s linear infinite}
-      @keyframes k217{0%,55.05%{fill:#4A1E0C}55.35%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c217{animation:k217 24.00s linear infinite}
-      @keyframes k227{0%,56.62%{fill:#4A1E0C}56.92%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c227{animation:k227 24.00s linear infinite}
-      @keyframes k230{0%,57.79%{fill:#4A1E0C}58.09%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c230{animation:k230 24.00s linear infinite}
-      @keyframes k233{0%,59.75%{fill:#4A1E0C}60.05%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c233{animation:k233 24.00s linear infinite}
-      @keyframes k236{0%,58.57%{fill:#4A1E0C}58.87%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c236{animation:k236 24.00s linear infinite}
-      @keyframes k240{0%,60.14%{fill:#4A1E0C}60.44%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c240{animation:k240 24.00s linear infinite}
-      @keyframes k249{0%,61.31%{fill:#4A1E0C}61.61%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c249{animation:k249 24.00s linear infinite}
-      @keyframes k260{0%,63.27%{fill:#4A1E0C}63.57%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c260{animation:k260 24.00s linear infinite}
-      @keyframes k261{0%,62.88%{fill:#4A1E0C}63.18%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c261{animation:k261 24.00s linear infinite}
-      @keyframes k262{0%,62.49%{fill:#4A1E0C}62.79%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c262{animation:k262 24.00s linear infinite}
-      @keyframes k266{0%,64.05%{fill:#FF5E1A}64.35%,95.2%{fill:#18181D}98.8%,100%{fill:#FF5E1A}}.c266{animation:k266 24.00s linear infinite}
-      @keyframes k267{0%,64.45%{fill:#CC4912}64.75%,95.2%{fill:#18181D}98.8%,100%{fill:#CC4912}}.c267{animation:k267 24.00s linear infinite}
-      @keyframes k268{0%,64.84%{fill:#8C330E}65.14%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c268{animation:k268 24.00s linear infinite}
-      @keyframes k269{0%,65.23%{fill:#8C330E}65.53%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c269{animation:k269 24.00s linear infinite}
-      @keyframes k270{0%,65.62%{fill:#8C330E}65.92%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c270{animation:k270 24.00s linear infinite}
-      @keyframes k272{0%,66.40%{fill:#8C330E}66.70%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c272{animation:k272 24.00s linear infinite}
-      @keyframes k273{0%,69.14%{fill:#8C330E}69.44%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c273{animation:k273 24.00s linear infinite}
-      @keyframes k274{0%,68.75%{fill:#8C330E}69.05%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c274{animation:k274 24.00s linear infinite}
-      @keyframes k275{0%,68.36%{fill:#FF5E1A}68.66%,95.2%{fill:#18181D}98.8%,100%{fill:#FF5E1A}}.c275{animation:k275 24.00s linear infinite}
-      @keyframes k276{0%,67.97%{fill:#4A1E0C}68.27%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c276{animation:k276 24.00s linear infinite}
-      @keyframes k282{0%,70.32%{fill:#4A1E0C}70.62%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c282{animation:k282 24.00s linear infinite}
-      @keyframes k283{0%,70.71%{fill:#CC4912}71.01%,95.2%{fill:#18181D}98.8%,100%{fill:#CC4912}}.c283{animation:k283 24.00s linear infinite}
-      @keyframes k284{0%,71.10%{fill:#8C330E}71.40%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c284{animation:k284 24.00s linear infinite}
-      @keyframes k285{0%,71.49%{fill:#CC4912}71.79%,95.2%{fill:#18181D}98.8%,100%{fill:#CC4912}}.c285{animation:k285 24.00s linear infinite}
-      @keyframes k286{0%,71.88%{fill:#4A1E0C}72.18%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c286{animation:k286 24.00s linear infinite}
-      @keyframes k287{0%,74.62%{fill:#FF5E1A}74.92%,95.2%{fill:#18181D}98.8%,100%{fill:#FF5E1A}}.c287{animation:k287 24.00s linear infinite}
-      @keyframes k288{0%,74.23%{fill:#8C330E}74.53%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c288{animation:k288 24.00s linear infinite}
-      @keyframes k290{0%,73.45%{fill:#4A1E0C}73.75%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c290{animation:k290 24.00s linear infinite}
-      @keyframes k291{0%,73.06%{fill:#4A1E0C}73.36%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c291{animation:k291 24.00s linear infinite}
-      @keyframes k292{0%,72.67%{fill:#FF5E1A}72.97%,95.2%{fill:#18181D}98.8%,100%{fill:#FF5E1A}}.c292{animation:k292 24.00s linear infinite}
-      @keyframes k293{0%,72.28%{fill:#4A1E0C}72.58%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c293{animation:k293 24.00s linear infinite}
-      @keyframes k300{0%,77.36%{fill:#4A1E0C}77.66%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c300{animation:k300 24.00s linear infinite}
-      @keyframes k301{0%,80.11%{fill:#4A1E0C}80.41%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c301{animation:k301 24.00s linear infinite}
-      @keyframes k304{0%,78.93%{fill:#4A1E0C}79.23%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c304{animation:k304 24.00s linear infinite}
-      @keyframes k305{0%,78.54%{fill:#8C330E}78.84%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c305{animation:k305 24.00s linear infinite}
-      @keyframes k307{0%,77.76%{fill:#4A1E0C}78.06%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c307{animation:k307 24.00s linear infinite}
-      @keyframes k310{0%,81.28%{fill:#4A1E0C}81.58%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c310{animation:k310 24.00s linear infinite}
-      @keyframes k312{0%,82.06%{fill:#4A1E0C}82.36%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c312{animation:k312 24.00s linear infinite}
-      @keyframes k313{0%,82.45%{fill:#4A1E0C}82.75%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c313{animation:k313 24.00s linear infinite}
-      @keyframes k328{0%,83.63%{fill:#4A1E0C}83.93%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c328{animation:k328 24.00s linear infinite}
-      @keyframes k338{0%,85.98%{fill:#CC4912}86.28%,95.2%{fill:#18181D}98.8%,100%{fill:#CC4912}}.c338{animation:k338 24.00s linear infinite}
-      @keyframes k339{0%,85.59%{fill:#8C330E}85.89%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c339{animation:k339 24.00s linear infinite}
-      @keyframes k340{0%,85.19%{fill:#8C330E}85.49%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c340{animation:k340 24.00s linear infinite}
-      @keyframes k341{0%,84.80%{fill:#4A1E0C}85.10%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c341{animation:k341 24.00s linear infinite}
-      @keyframes k343{0%,87.15%{fill:#8C330E}87.45%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c343{animation:k343 24.00s linear infinite}
-      @keyframes k344{0%,87.54%{fill:#4A1E0C}87.84%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c344{animation:k344 24.00s linear infinite}
-      @keyframes k346{0%,88.33%{fill:#8C330E}88.63%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c346{animation:k346 24.00s linear infinite}
-      @keyframes k347{0%,88.72%{fill:#4A1E0C}89.02%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c347{animation:k347 24.00s linear infinite}
+      @keyframes k41{0%,2.57%{fill:#4A1E0C}2.87%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c41{animation:k41 24.00s linear infinite}
+      @keyframes k42{0%,5.28%{fill:#4A1E0C}5.58%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c42{animation:k42 24.00s linear infinite}
+      @keyframes k57{0%,6.45%{fill:#4A1E0C}6.75%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c57{animation:k57 24.00s linear infinite}
+      @keyframes k59{0%,7.23%{fill:#4A1E0C}7.53%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c59{animation:k59 24.00s linear infinite}
+      @keyframes k61{0%,8.00%{fill:#FF5E1A}8.30%,95.2%{fill:#18181D}98.8%,100%{fill:#FF5E1A}}.c61{animation:k61 24.00s linear infinite}
+      @keyframes k62{0%,8.39%{fill:#4A1E0C}8.69%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c62{animation:k62 24.00s linear infinite}
+      @keyframes k64{0%,10.72%{fill:#4A1E0C}11.02%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c64{animation:k64 24.00s linear infinite}
+      @keyframes k65{0%,10.33%{fill:#CC4912}10.63%,95.2%{fill:#18181D}98.8%,100%{fill:#CC4912}}.c65{animation:k65 24.00s linear infinite}
+      @keyframes k66{0%,9.94%{fill:#8C330E}10.24%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c66{animation:k66 24.00s linear infinite}
+      @keyframes k67{0%,9.55%{fill:#FF5E1A}9.85%,95.2%{fill:#18181D}98.8%,100%{fill:#FF5E1A}}.c67{animation:k67 24.00s linear infinite}
+      @keyframes k68{0%,9.17%{fill:#4A1E0C}9.47%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c68{animation:k68 24.00s linear infinite}
+      @keyframes k69{0%,8.78%{fill:#8C330E}9.08%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c69{animation:k69 24.00s linear infinite}
+      @keyframes k70{0%,11.50%{fill:#CC4912}11.80%,95.2%{fill:#18181D}98.8%,100%{fill:#CC4912}}.c70{animation:k70 24.00s linear infinite}
+      @keyframes k71{0%,11.88%{fill:#CC4912}12.18%,95.2%{fill:#18181D}98.8%,100%{fill:#CC4912}}.c71{animation:k71 24.00s linear infinite}
+      @keyframes k72{0%,12.27%{fill:#4A1E0C}12.57%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c72{animation:k72 24.00s linear infinite}
+      @keyframes k73{0%,12.66%{fill:#FF5E1A}12.96%,95.2%{fill:#18181D}98.8%,100%{fill:#FF5E1A}}.c73{animation:k73 24.00s linear infinite}
+      @keyframes k74{0%,13.05%{fill:#CC4912}13.35%,95.2%{fill:#18181D}98.8%,100%{fill:#CC4912}}.c74{animation:k74 24.00s linear infinite}
+      @keyframes k75{0%,13.44%{fill:#8C330E}13.74%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c75{animation:k75 24.00s linear infinite}
+      @keyframes k76{0%,13.82%{fill:#4A1E0C}14.12%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c76{animation:k76 24.00s linear infinite}
+      @keyframes k78{0%,16.15%{fill:#4A1E0C}16.45%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c78{animation:k78 24.00s linear infinite}
+      @keyframes k82{0%,14.60%{fill:#8C330E}14.90%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c82{animation:k82 24.00s linear infinite}
+      @keyframes k84{0%,16.93%{fill:#8C330E}17.23%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c84{animation:k84 24.00s linear infinite}
+      @keyframes k87{0%,18.09%{fill:#4A1E0C}18.39%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c87{animation:k87 24.00s linear infinite}
+      @keyframes k103{0%,19.65%{fill:#8C330E}19.95%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c103{animation:k103 24.00s linear infinite}
+      @keyframes k109{0%,21.20%{fill:#FF5E1A}21.50%,95.2%{fill:#18181D}98.8%,100%{fill:#FF5E1A}}.c109{animation:k109 24.00s linear infinite}
+      @keyframes k110{0%,20.81%{fill:#4A1E0C}21.11%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c110{animation:k110 24.00s linear infinite}
+      @keyframes k111{0%,20.42%{fill:#8C330E}20.72%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c111{animation:k111 24.00s linear infinite}
+      @keyframes k115{0%,21.98%{fill:#FF5E1A}22.28%,95.2%{fill:#18181D}98.8%,100%{fill:#FF5E1A}}.c115{animation:k115 24.00s linear infinite}
+      @keyframes k121{0%,22.75%{fill:#FF5E1A}23.05%,95.2%{fill:#18181D}98.8%,100%{fill:#FF5E1A}}.c121{animation:k121 24.00s linear infinite}
+      @keyframes k126{0%,23.92%{fill:#8C330E}24.22%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c126{animation:k126 24.00s linear infinite}
+      @keyframes k127{0%,24.31%{fill:#4A1E0C}24.61%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c127{animation:k127 24.00s linear infinite}
+      @keyframes k128{0%,24.69%{fill:#FF5E1A}24.99%,95.2%{fill:#18181D}98.8%,100%{fill:#FF5E1A}}.c128{animation:k128 24.00s linear infinite}
+      @keyframes k129{0%,25.08%{fill:#4A1E0C}25.38%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c129{animation:k129 24.00s linear infinite}
+      @keyframes k130{0%,25.47%{fill:#4A1E0C}25.77%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c130{animation:k130 24.00s linear infinite}
+      @keyframes k132{0%,26.25%{fill:#4A1E0C}26.55%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c132{animation:k132 24.00s linear infinite}
+      @keyframes k133{0%,28.96%{fill:#4A1E0C}29.26%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c133{animation:k133 24.00s linear infinite}
+      @keyframes k136{0%,27.80%{fill:#4A1E0C}28.10%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c136{animation:k136 24.00s linear infinite}
+      @keyframes k137{0%,27.41%{fill:#4A1E0C}27.71%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c137{animation:k137 24.00s linear infinite}
+      @keyframes k138{0%,27.02%{fill:#4A1E0C}27.32%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c138{animation:k138 24.00s linear infinite}
+      @keyframes k139{0%,26.63%{fill:#4A1E0C}26.93%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c139{animation:k139 24.00s linear infinite}
+      @keyframes k140{0%,29.35%{fill:#4A1E0C}29.65%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c140{animation:k140 24.00s linear infinite}
+      @keyframes k142{0%,30.13%{fill:#4A1E0C}30.43%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c142{animation:k142 24.00s linear infinite}
+      @keyframes k143{0%,30.52%{fill:#4A1E0C}30.82%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c143{animation:k143 24.00s linear infinite}
+      @keyframes k144{0%,30.90%{fill:#4A1E0C}31.20%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c144{animation:k144 24.00s linear infinite}
+      @keyframes k145{0%,31.29%{fill:#4A1E0C}31.59%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c145{animation:k145 24.00s linear infinite}
+      @keyframes k148{0%,33.23%{fill:#4A1E0C}33.53%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c148{animation:k148 24.00s linear infinite}
+      @keyframes k149{0%,32.85%{fill:#4A1E0C}33.15%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c149{animation:k149 24.00s linear infinite}
+      @keyframes k150{0%,32.46%{fill:#4A1E0C}32.76%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c150{animation:k150 24.00s linear infinite}
+      @keyframes k151{0%,32.07%{fill:#8C330E}32.37%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c151{animation:k151 24.00s linear infinite}
+      @keyframes k155{0%,33.62%{fill:#8C330E}33.92%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c155{animation:k155 24.00s linear infinite}
+      @keyframes k156{0%,34.01%{fill:#4A1E0C}34.31%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c156{animation:k156 24.00s linear infinite}
+      @keyframes k159{0%,35.17%{fill:#CC4912}35.47%,95.2%{fill:#18181D}98.8%,100%{fill:#CC4912}}.c159{animation:k159 24.00s linear infinite}
+      @keyframes k160{0%,35.56%{fill:#4A1E0C}35.86%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c160{animation:k160 24.00s linear infinite}
+      @keyframes k161{0%,38.28%{fill:#4A1E0C}38.58%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c161{animation:k161 24.00s linear infinite}
+      @keyframes k165{0%,36.73%{fill:#4A1E0C}37.03%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c165{animation:k165 24.00s linear infinite}
+      @keyframes k166{0%,36.34%{fill:#4A1E0C}36.64%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c166{animation:k166 24.00s linear infinite}
+      @keyframes k167{0%,35.95%{fill:#CC4912}36.25%,95.2%{fill:#18181D}98.8%,100%{fill:#CC4912}}.c167{animation:k167 24.00s linear infinite}
+      @keyframes k169{0%,39.06%{fill:#FF5E1A}39.36%,95.2%{fill:#18181D}98.8%,100%{fill:#FF5E1A}}.c169{animation:k169 24.00s linear infinite}
+      @keyframes k170{0%,39.44%{fill:#8C330E}39.74%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c170{animation:k170 24.00s linear infinite}
+      @keyframes k171{0%,39.83%{fill:#FF5E1A}40.13%,95.2%{fill:#18181D}98.8%,100%{fill:#FF5E1A}}.c171{animation:k171 24.00s linear infinite}
+      @keyframes k172{0%,40.22%{fill:#4A1E0C}40.52%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c172{animation:k172 24.00s linear infinite}
+      @keyframes k173{0%,40.61%{fill:#4A1E0C}40.91%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c173{animation:k173 24.00s linear infinite}
+      @keyframes k174{0%,41.00%{fill:#4A1E0C}41.30%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c174{animation:k174 24.00s linear infinite}
+      @keyframes k176{0%,43.33%{fill:#8C330E}43.63%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c176{animation:k176 24.00s linear infinite}
+      @keyframes k178{0%,42.55%{fill:#8C330E}42.85%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c178{animation:k178 24.00s linear infinite}
+      @keyframes k179{0%,42.16%{fill:#CC4912}42.46%,95.2%{fill:#18181D}98.8%,100%{fill:#CC4912}}.c179{animation:k179 24.00s linear infinite}
+      @keyframes k183{0%,43.71%{fill:#8C330E}44.01%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c183{animation:k183 24.00s linear infinite}
+      @keyframes k184{0%,44.10%{fill:#4A1E0C}44.40%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c184{animation:k184 24.00s linear infinite}
+      @keyframes k187{0%,45.27%{fill:#4A1E0C}45.57%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c187{animation:k187 24.00s linear infinite}
+      @keyframes k197{0%,48.37%{fill:#4A1E0C}48.67%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c197{animation:k197 24.00s linear infinite}
+      @keyframes k202{0%,46.43%{fill:#CC4912}46.73%,95.2%{fill:#18181D}98.8%,100%{fill:#CC4912}}.c202{animation:k202 24.00s linear infinite}
+      @keyframes k203{0%,49.15%{fill:#8C330E}49.45%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c203{animation:k203 24.00s linear infinite}
+      @keyframes k207{0%,50.70%{fill:#4A1E0C}51.00%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c207{animation:k207 24.00s linear infinite}
+      @keyframes k208{0%,51.09%{fill:#4A1E0C}51.39%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c208{animation:k208 24.00s linear infinite}
+      @keyframes k209{0%,51.48%{fill:#4A1E0C}51.78%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c209{animation:k209 24.00s linear infinite}
+      @keyframes k210{0%,54.20%{fill:#4A1E0C}54.50%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c210{animation:k210 24.00s linear infinite}
+      @keyframes k211{0%,53.81%{fill:#4A1E0C}54.11%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c211{animation:k211 24.00s linear infinite}
+      @keyframes k212{0%,53.42%{fill:#4A1E0C}53.72%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c212{animation:k212 24.00s linear infinite}
+      @keyframes k213{0%,53.03%{fill:#4A1E0C}53.33%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c213{animation:k213 24.00s linear infinite}
+      @keyframes k214{0%,52.64%{fill:#CC4912}52.94%,95.2%{fill:#18181D}98.8%,100%{fill:#CC4912}}.c214{animation:k214 24.00s linear infinite}
+      @keyframes k215{0%,52.26%{fill:#4A1E0C}52.56%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c215{animation:k215 24.00s linear infinite}
+      @keyframes k217{0%,54.58%{fill:#4A1E0C}54.88%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c217{animation:k217 24.00s linear infinite}
+      @keyframes k227{0%,56.14%{fill:#4A1E0C}56.44%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c227{animation:k227 24.00s linear infinite}
+      @keyframes k230{0%,57.30%{fill:#4A1E0C}57.60%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c230{animation:k230 24.00s linear infinite}
+      @keyframes k233{0%,59.24%{fill:#4A1E0C}59.54%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c233{animation:k233 24.00s linear infinite}
+      @keyframes k236{0%,58.08%{fill:#4A1E0C}58.38%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c236{animation:k236 24.00s linear infinite}
+      @keyframes k240{0%,59.63%{fill:#4A1E0C}59.93%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c240{animation:k240 24.00s linear infinite}
+      @keyframes k249{0%,60.80%{fill:#4A1E0C}61.10%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c249{animation:k249 24.00s linear infinite}
+      @keyframes k260{0%,62.74%{fill:#4A1E0C}63.04%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c260{animation:k260 24.00s linear infinite}
+      @keyframes k261{0%,62.35%{fill:#4A1E0C}62.65%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c261{animation:k261 24.00s linear infinite}
+      @keyframes k262{0%,61.96%{fill:#4A1E0C}62.26%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c262{animation:k262 24.00s linear infinite}
+      @keyframes k266{0%,63.51%{fill:#FF5E1A}63.81%,95.2%{fill:#18181D}98.8%,100%{fill:#FF5E1A}}.c266{animation:k266 24.00s linear infinite}
+      @keyframes k267{0%,63.90%{fill:#CC4912}64.20%,95.2%{fill:#18181D}98.8%,100%{fill:#CC4912}}.c267{animation:k267 24.00s linear infinite}
+      @keyframes k268{0%,64.29%{fill:#8C330E}64.59%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c268{animation:k268 24.00s linear infinite}
+      @keyframes k269{0%,64.68%{fill:#8C330E}64.98%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c269{animation:k269 24.00s linear infinite}
+      @keyframes k270{0%,65.07%{fill:#8C330E}65.37%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c270{animation:k270 24.00s linear infinite}
+      @keyframes k272{0%,65.84%{fill:#8C330E}66.14%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c272{animation:k272 24.00s linear infinite}
+      @keyframes k273{0%,68.56%{fill:#8C330E}68.86%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c273{animation:k273 24.00s linear infinite}
+      @keyframes k274{0%,68.17%{fill:#8C330E}68.47%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c274{animation:k274 24.00s linear infinite}
+      @keyframes k275{0%,67.78%{fill:#FF5E1A}68.08%,95.2%{fill:#18181D}98.8%,100%{fill:#FF5E1A}}.c275{animation:k275 24.00s linear infinite}
+      @keyframes k276{0%,67.39%{fill:#4A1E0C}67.69%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c276{animation:k276 24.00s linear infinite}
+      @keyframes k282{0%,69.72%{fill:#4A1E0C}70.02%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c282{animation:k282 24.00s linear infinite}
+      @keyframes k283{0%,70.11%{fill:#CC4912}70.41%,95.2%{fill:#18181D}98.8%,100%{fill:#CC4912}}.c283{animation:k283 24.00s linear infinite}
+      @keyframes k284{0%,70.50%{fill:#8C330E}70.80%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c284{animation:k284 24.00s linear infinite}
+      @keyframes k285{0%,70.89%{fill:#CC4912}71.19%,95.2%{fill:#18181D}98.8%,100%{fill:#CC4912}}.c285{animation:k285 24.00s linear infinite}
+      @keyframes k286{0%,71.28%{fill:#4A1E0C}71.58%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c286{animation:k286 24.00s linear infinite}
+      @keyframes k287{0%,73.99%{fill:#FF5E1A}74.29%,95.2%{fill:#18181D}98.8%,100%{fill:#FF5E1A}}.c287{animation:k287 24.00s linear infinite}
+      @keyframes k288{0%,73.61%{fill:#8C330E}73.91%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c288{animation:k288 24.00s linear infinite}
+      @keyframes k290{0%,72.83%{fill:#4A1E0C}73.13%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c290{animation:k290 24.00s linear infinite}
+      @keyframes k291{0%,72.44%{fill:#4A1E0C}72.74%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c291{animation:k291 24.00s linear infinite}
+      @keyframes k292{0%,72.05%{fill:#FF5E1A}72.35%,95.2%{fill:#18181D}98.8%,100%{fill:#FF5E1A}}.c292{animation:k292 24.00s linear infinite}
+      @keyframes k293{0%,71.66%{fill:#4A1E0C}71.96%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c293{animation:k293 24.00s linear infinite}
+      @keyframes k300{0%,76.71%{fill:#4A1E0C}77.01%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c300{animation:k300 24.00s linear infinite}
+      @keyframes k301{0%,79.43%{fill:#4A1E0C}79.73%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c301{animation:k301 24.00s linear infinite}
+      @keyframes k304{0%,78.26%{fill:#4A1E0C}78.56%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c304{animation:k304 24.00s linear infinite}
+      @keyframes k305{0%,77.88%{fill:#8C330E}78.18%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c305{animation:k305 24.00s linear infinite}
+      @keyframes k307{0%,77.10%{fill:#4A1E0C}77.40%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c307{animation:k307 24.00s linear infinite}
+      @keyframes k310{0%,80.59%{fill:#4A1E0C}80.89%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c310{animation:k310 24.00s linear infinite}
+      @keyframes k312{0%,81.37%{fill:#4A1E0C}81.67%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c312{animation:k312 24.00s linear infinite}
+      @keyframes k313{0%,81.76%{fill:#4A1E0C}82.06%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c313{animation:k313 24.00s linear infinite}
+      @keyframes k328{0%,82.92%{fill:#4A1E0C}83.22%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c328{animation:k328 24.00s linear infinite}
+      @keyframes k338{0%,85.25%{fill:#CC4912}85.55%,95.2%{fill:#18181D}98.8%,100%{fill:#CC4912}}.c338{animation:k338 24.00s linear infinite}
+      @keyframes k339{0%,84.86%{fill:#8C330E}85.16%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c339{animation:k339 24.00s linear infinite}
+      @keyframes k340{0%,84.47%{fill:#8C330E}84.77%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c340{animation:k340 24.00s linear infinite}
+      @keyframes k341{0%,84.09%{fill:#4A1E0C}84.39%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c341{animation:k341 24.00s linear infinite}
+      @keyframes k343{0%,86.42%{fill:#8C330E}86.72%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c343{animation:k343 24.00s linear infinite}
+      @keyframes k344{0%,86.80%{fill:#4A1E0C}87.10%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c344{animation:k344 24.00s linear infinite}
+      @keyframes k346{0%,87.58%{fill:#8C330E}87.88%,95.2%{fill:#18181D}98.8%,100%{fill:#8C330E}}.c346{animation:k346 24.00s linear infinite}
+      @keyframes k347{0%,87.97%{fill:#4A1E0C}88.27%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c347{animation:k347 24.00s linear infinite}
       @keyframes k357{0%,91.07%{fill:#CC4912}91.37%,95.2%{fill:#18181D}98.8%,100%{fill:#CC4912}}.c357{animation:k357 24.00s linear infinite}
-      @keyframes k358{0%,90.68%{fill:#4A1E0C}90.98%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c358{animation:k358 24.00s linear infinite}
-      @keyframes k360{0%,89.89%{fill:#4A1E0C}90.19%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c360{animation:k360 24.00s linear infinite}
+      @keyframes k358{0%,90.69%{fill:#4A1E0C}90.99%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c358{animation:k358 24.00s linear infinite}
+      @keyframes k360{0%,89.91%{fill:#4A1E0C}90.21%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c360{animation:k360 24.00s linear infinite}
+      @keyframes k362{0%,89.13%{fill:#4A1E0C}89.43%,95.2%{fill:#18181D}98.8%,100%{fill:#4A1E0C}}.c362{animation:k362 24.00s linear infinite}
     </style>
 
     <pattern id="portraitGrid" width="24" height="24" patternUnits="userSpaceOnUse">
@@ -280,7 +281,7 @@
     <rect x="221" y="420" width="171" height="74" rx="12" fill="#09090B" stroke="#222228" stroke-width="1"/>
     <text x="235" y="441" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10" letter-spacing="0.8">CONTRIBUTIONS</text>
     <circle cx="378" cy="437" r="3" fill="#FF5E1A"/>
-    <text x="235" y="479" fill="#FF5E1A" font-family="'Space Grotesk', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="700">894</text>
+    <text x="235" y="479" fill="#FF5E1A" font-family="'Space Grotesk', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="700">899</text>
 
     <rect x="40" y="504" width="171" height="74" rx="12" fill="#09090B" stroke="#222228" stroke-width="1"/>
     <text x="54" y="525" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10" letter-spacing="0.8">FOLLOWERS</text>
@@ -850,13 +851,13 @@
       <rect x="660.45" y="26.0" width="9.5" height="9.5" rx="2" fill="#18181D"/>
       <rect class="c360" x="660.45" y="39.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/>
       <rect x="660.45" y="52.0" width="9.5" height="9.5" rx="2" fill="#18181D"/>
-      <rect x="660.45" y="65.0" width="9.5" height="9.5" rx="2" fill="#18181D"/>
+      <rect class="c362" x="660.45" y="65.0" width="9.5" height="9.5" rx="2" fill="#4A1E0C"/>
       <rect x="660.45" y="78.0" width="9.5" height="9.5" rx="2" fill="#18181D"/>
-      <rect class="snk" style="animation-delay:0.4698s" x="1.65" y="1.65" width="6.2" height="6.2" rx="2.0" fill="#047857" opacity="0.58"/>
-      <rect class="snk" style="animation-delay:0.3758s" x="1.25" y="1.25" width="7.0" height="7.0" rx="2.2" fill="#059669" opacity="0.72"/>
-      <rect class="snk" style="animation-delay:0.2819s" x="0.85" y="0.85" width="7.8" height="7.8" rx="2.4" fill="#10B981" opacity="0.84"/>
-      <rect class="snk" style="animation-delay:0.1879s" x="0.5" y="0.5" width="8.5" height="8.5" rx="2.6" fill="#22C55E" opacity="0.92"/>
-      <rect class="snk" style="animation-delay:0.094s" x="0.25" y="0.25" width="9.0" height="9.0" rx="2.8" fill="#34D399" opacity="0.97"/>
+      <rect class="snk" style="animation-delay:0.4658s" x="1.65" y="1.65" width="6.2" height="6.2" rx="2.0" fill="#047857" opacity="0.58"/>
+      <rect class="snk" style="animation-delay:0.3727s" x="1.25" y="1.25" width="7.0" height="7.0" rx="2.2" fill="#059669" opacity="0.72"/>
+      <rect class="snk" style="animation-delay:0.2795s" x="0.85" y="0.85" width="7.8" height="7.8" rx="2.4" fill="#10B981" opacity="0.84"/>
+      <rect class="snk" style="animation-delay:0.1863s" x="0.5" y="0.5" width="8.5" height="8.5" rx="2.6" fill="#22C55E" opacity="0.92"/>
+      <rect class="snk" style="animation-delay:0.0932s" x="0.25" y="0.25" width="9.0" height="9.0" rx="2.8" fill="#34D399" opacity="0.97"/>
       <g class="snk" style="animation-delay:0.0s"><rect x="0.0" y="0.0" width="9.5" height="9.5" rx="3.0" fill="#6EE7B7" filter="url(#greenGlow)"/><rect x="3.1" y="3.1" width="3.3" height="3.3" rx="1" fill="#FAFAFA" opacity="0.85"/></g>
     </g>
 
@@ -878,7 +879,7 @@
 
     <rect x="770" y="966" width="190" height="62" rx="12" fill="#09090B" stroke="#222228" stroke-width="1"/>
     <text x="782" y="984" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="9.5" letter-spacing="0.8">CURRENT STREAK</text>
-    <text x="782" y="1016" fill="#FF5E1A" font-family="'Space Grotesk', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="700">0 <tspan fill="#8E8E93" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12" font-weight="400">days</tspan></text>
+    <text x="782" y="1016" fill="#FF5E1A" font-family="'Space Grotesk', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="700">1 <tspan fill="#8E8E93" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12" font-weight="400">days</tspan></text>
 
     <rect x="770" y="1038" width="190" height="62" rx="12" fill="#09090B" stroke="#222228" stroke-width="1"/>
     <text x="782" y="1056" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="9.5" letter-spacing="0.8">BEST STREAK</text>
@@ -886,11 +887,11 @@
 
     <line x1="770" y1="1112" x2="960" y2="1112" stroke="#222228" stroke-width="1"/>
     <text x="772" y="1128" fill="#8E8E93" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10">30D PULSE</text>
-    <text x="958" y="1128" text-anchor="end" fill="#FF5E1A" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10" font-weight="600">+243%</text>
+    <text x="958" y="1128" text-anchor="end" fill="#FF5E1A" font-family="'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Consolas, Menlo, monospace" font-size="10" font-weight="600">+267%</text>
 
     <g transform="translate(772, 1136)">
-      <path d="M0.0,30.0 L12.4,30.0 L24.8,30.0 L37.2,14.4 L49.6,7.9 L62.0,26.1 L74.4,19.6 L86.8,18.3 L99.2,28.7 L111.6,30.0 L124.0,30.0 L136.4,30.0 L148.8,30.0 L161.2,4.0 L173.6,27.4 L186.0,30.0 L186.0,34.0 L0,34.0 Z" fill="url(#sparkFill)"/>
-      <path d="M0.0,30.0 L12.4,30.0 L24.8,30.0 L37.2,14.4 L49.6,7.9 L62.0,26.1 L74.4,19.6 L86.8,18.3 L99.2,28.7 L111.6,30.0 L124.0,30.0 L136.4,30.0 L148.8,30.0 L161.2,4.0 L173.6,27.4 L186.0,30.0" fill="none" stroke="#FF5E1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M0.0,30.0 L12.4,30.0 L24.8,30.0 L37.2,14.4 L49.6,7.9 L62.0,26.1 L74.4,19.6 L86.8,18.3 L99.2,28.7 L111.6,30.0 L124.0,30.0 L136.4,30.0 L148.8,30.0 L161.2,4.0 L173.6,27.4 L186.0,23.5 L186.0,34.0 L0,34.0 Z" fill="url(#sparkFill)"/>
+      <path d="M0.0,30.0 L12.4,30.0 L24.8,30.0 L37.2,14.4 L49.6,7.9 L62.0,26.1 L74.4,19.6 L86.8,18.3 L99.2,28.7 L111.6,30.0 L124.0,30.0 L136.4,30.0 L148.8,30.0 L161.2,4.0 L173.6,27.4 L186.0,23.5" fill="none" stroke="#FF5E1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </g>
   </g>
 </svg>
